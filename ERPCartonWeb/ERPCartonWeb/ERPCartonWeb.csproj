@@ -18,4 +18,12 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ERPCartonWeb.Application\ERPCartonWeb.Application.csproj" />
+    <ProjectReference Include="..\ERPCartonWeb.Data.EF\ERPCartonWeb.Data.EF.csproj" />
+    <ProjectReference Include="..\ERPCartonWeb.Data\ERPCartonWeb.Data.csproj" />
+    <ProjectReference Include="..\ERPCartonWeb.Infrastructure\ERPCartonWeb.Infrastructure.csproj" />
+    <ProjectReference Include="..\ERPCartonWeb.Utilities\ERPCartonWeb.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>

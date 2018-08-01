@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Implementations\" />
+    <Folder Include="AutoMapper\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ERPCartonWeb.Data.EF\ERPCartonWeb.Data.EF.csproj" />
+    <ProjectReference Include="..\ERPCartonWeb.Data\ERPCartonWeb.Data.csproj" />
+    <ProjectReference Include="..\ERPCartonWeb.Utilities\ERPCartonWeb.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
