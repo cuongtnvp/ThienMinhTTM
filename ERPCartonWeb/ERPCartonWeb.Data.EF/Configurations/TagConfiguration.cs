@@ -8,7 +8,7 @@ using static ERPCartonWeb.Data.EF.Extensions.ModelBuilderExtensions;
 
 namespace ERPCartonWeb.Data.EF.Configurations
 {
-    public class TagConfiguration : DbEntityCOnfiguration<Tag>
+    public class TagConfiguration : DbEntityConfiguration<Tag>
     {
         public override void Configure(EntityTypeBuilder<Tag> entity)
         {
