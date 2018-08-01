@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPCartonWeb", "ERPCartonWeb\ERPCartonWeb.csproj", "{5AA1C789-8D83-44B1-B6BF-FA3ACC898AB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AA1C789-8D83-44B1-B6BF-FA3ACC898AB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA1C789-8D83-44B1-B6BF-FA3ACC898AB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA1C789-8D83-44B1-B6BF-FA3ACC898AB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA1C789-8D83-44B1-B6BF-FA3ACC898AB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA25FA54-8E37-45C1-878A-1C193FFE968C}
+	EndGlobalSection
+EndGlobal
