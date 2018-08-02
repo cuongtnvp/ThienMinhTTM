@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using ERPCartonWeb.Data;
 using ERPCartonWeb.Models;
 using ERPCartonWeb.Services;
+using ERPCartonWeb.Data.EF;
+using ERPCartonWeb.Data.Entities;
 
 namespace ERPCartonWeb
 {
@@ -26,21 +28,25 @@ namespace ERPCartonWeb
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            //Using datacontext from ERPCartonWeb.Data.EF
+            services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
+                o=>o.MigrationsAssembly("ERPCartonWeb.Data.EF")));
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+            services.AddIdentity<AppUser, AppRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
-
+            services.AddTransient<DbInitializer>();
+            services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
+            services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,DbInitializer dbInitializer)
         {
             if (env.IsDevelopment())
             {
@@ -63,6 +69,7 @@ namespace ERPCartonWeb
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+             dbInitializer.Seed().Wait();
         }
     }
 }
