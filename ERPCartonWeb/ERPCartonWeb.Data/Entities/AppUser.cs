@@ -1,5 +1,6 @@
 ﻿using ERPCartonWeb.Data.Enums;
 using ERPCartonWeb.Data.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 

@@ -1,12 +1,9 @@
-﻿using ERPCartonWeb.Data.Entities;
+﻿using ERPCartonWeb.Data.EF.Extensions;
+using ERPCartonWeb.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using static ERPCartonWeb.Data.EF.Extensions.ModelBuilderExtensions;
 
-namespace ERPCartonWeb.Data.EF.Configurations
+namespace ERPCartonWebData.EF.Configurations
 {
     public class TagConfiguration : DbEntityConfiguration<Tag>
     {
