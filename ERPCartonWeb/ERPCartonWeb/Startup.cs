@@ -13,6 +13,11 @@ using ERPCartonWeb.Models;
 using ERPCartonWeb.Services;
 using ERPCartonWeb.Data.EF;
 using ERPCartonWeb.Data.Entities;
+using AutoMapper;
+using ERPCartonWeb.Application.Interfaces;
+using ERPCartonWeb.Data.Repositories;
+using ERPCartonWeb.Data.EF.Repositories;
+using ERPCartonWeb.Application.Implementations;
 
 namespace ERPCartonWeb
 {
@@ -38,10 +43,18 @@ namespace ERPCartonWeb
                 .AddDefaultTokenProviders();
 
             // Add application services.
-            services.AddTransient<IEmailSender, EmailSender>();
-            services.AddTransient<DbInitializer>();
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
+
+            services.AddSingleton(Mapper.Configuration);
+            services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(), sp.GetService));
+
+            services.AddTransient<IEmailSender, EmailSender>();
+            services.AddTransient<DbInitializer>();
+
+            services.AddTransient<IProductCategoryRepository,ProductCategoryRepository>();
+            services.AddTransient<IProductCategoryService,ProductCategoryService>();
+
             services.AddMvc();
         }
 
