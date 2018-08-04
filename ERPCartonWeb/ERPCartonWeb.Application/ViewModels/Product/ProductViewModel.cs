@@ -1,14 +1,12 @@
 ﻿using ERPCartonWeb.Data.Enums;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace ERPCartonWeb.Application.ViewModels.Product
 {
-     public class ProductViewModel
+    public class ProductViewModel
     {
         public int Id { get; set; }
         [StringLength(255)]
@@ -47,8 +45,8 @@ namespace ERPCartonWeb.Application.ViewModels.Product
         [StringLength(255)]
         public string Unit { get; set; }
 
-       
-        public virtual ProductCategoryViewModel ProductCategoryViewModel{ set; get; }
+
+        public virtual ProductCategoryViewModel ProductCategoryViewModel { set; get; }
 
         public string SeoPageTitle { set; get; }
 
