@@ -8,11 +8,14 @@ using ERPCartonWeb.Data.Repositories;
 using ERPCartonWeb.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using System;
+using System.IO;
 using System.Linq;
 
 namespace ERPCartonWeb
@@ -97,9 +100,23 @@ namespace ERPCartonWeb
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
-                routes.MapRoute(
-                    name: "areaRoute", template: "{area:exists/{controller=Home}/{actiong=Index}/{id?}");
+
+                routes.MapRoute(name: "areaRoute",
+                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
             });
+            // For wwwroot directory
+            app.UseStaticFiles();
+
+            // Add support for node_modules but only during development **temporary**
+            if (env.IsDevelopment())
+            {
+                app.UseStaticFiles(new StaticFileOptions()
+                {
+                    FileProvider = new PhysicalFileProvider(
+                      Path.Combine(Directory.GetCurrentDirectory(), @"node_modules")),
+                    RequestPath = new PathString("/vendor")
+                });
+            }
 
         }
     }

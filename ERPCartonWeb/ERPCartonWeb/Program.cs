@@ -17,23 +17,23 @@ namespace ERPCartonWeb
         public static void Main(string[] args)
         {
             var host = BuildWebHost(args);
+
             using (var scope = host.Services.CreateScope())
             {
-                var services = scope.ServiceProvider;
+                var service = scope.ServiceProvider;
                 try
                 {
-                    
-                    var dbInitializer = services.GetService<DbInitializer>();
+
+                    var dbInitializer = service.GetService<DbInitializer>();
                     dbInitializer.Seed().Wait();
                 }
                 catch (Exception ex)
                 {
-                    var logger = services.GetService<ILogger<Program>>();
-                    logger.LogError(ex, "An Error occurred while seeding database");
-                    
+                    var logger = service.GetService<ILogger<Program>>();
+                    logger.LogError(ex, "An error seeding database");
                 }
             }
-                host.Run();
+            host.Run();
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
