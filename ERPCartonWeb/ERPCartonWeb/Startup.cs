@@ -113,7 +113,7 @@ namespace ERPCartonWeb
                 app.UseStaticFiles(new StaticFileOptions()
                 {
                     FileProvider = new PhysicalFileProvider(
-                      Path.Combine(Directory.GetCurrentDirectory(), @"node_modules")),
+                      Path.Combine(Directory.GetCurrentDirectory(), @"node_modules/gentelella/vendors")),
                     RequestPath = new PathString("/vendor")
                 });
             }
