@@ -5,6 +5,7 @@ using ERPCartonWeb.Data.EF;
 using ERPCartonWeb.Data.EF.Repositories;
 using ERPCartonWeb.Data.Entities;
 using ERPCartonWeb.Data.Repositories;
+using ERPCartonWeb.Helpers;
 using ERPCartonWeb.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -14,6 +15,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Serialization;
 using System;
 using System.IO;
 using System.Linq;
@@ -34,7 +37,7 @@ namespace ERPCartonWeb
         {
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
-                o => o.MigrationsAssembly("TeduCoreApp.Data.EF")));
+                o => o.MigrationsAssembly("ERPCartonWeb.Data.EF")));
 
             services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<AppDbContext>()
@@ -73,13 +76,15 @@ namespace ERPCartonWeb
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
 
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
+            services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
 
-            services.AddMvc();
+            services.AddMvc().AddJsonOptions(options=>options.SerializerSettings.ContractResolver=new DefaultContractResolver());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddFile("Logs/cuong-{Date}.txt");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -102,21 +107,21 @@ namespace ERPCartonWeb
                     template: "{controller=Home}/{action=Index}/{id?}");
 
                 routes.MapRoute(name: "areaRoute",
-                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                    template: "{area:exists}/{controller=Login}/{action=Index}/{id?}");
             });
             // For wwwroot directory
-            app.UseStaticFiles();
+            //app.UseStaticFiles();
 
-            // Add support for node_modules but only during development **temporary**
-            if (env.IsDevelopment())
-            {
-                app.UseStaticFiles(new StaticFileOptions()
-                {
-                    FileProvider = new PhysicalFileProvider(
-                      Path.Combine(Directory.GetCurrentDirectory(), @"node_modules/gentelella/vendors")),
-                    RequestPath = new PathString("/vendor")
-                });
-            }
+            //// Add support for node_modules but only during development **temporary**
+            //if (env.IsDevelopment())
+            //{
+            //    app.UseStaticFiles(new StaticFileOptions()
+            //    {
+            //        FileProvider = new PhysicalFileProvider(
+            //          Path.Combine(Directory.GetCurrentDirectory(), @"node_modules/")),
+            //        RequestPath = new PathString("/vendor")
+            //    });
+            //}
 
         }
     }

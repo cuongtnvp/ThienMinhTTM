@@ -5,13 +5,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ERPCartonWeb.Models;
+using Microsoft.AspNetCore.Authorization;
+using ERPCartonWeb.Extensions;
 
 namespace ERPCartonWeb.Controllers
 {
     public class HomeController : Controller
     {
+        [Authorize]
         public IActionResult Index()
         {
+            var email = User.GetSpecificClaim("Email");
             return View();
         }
 

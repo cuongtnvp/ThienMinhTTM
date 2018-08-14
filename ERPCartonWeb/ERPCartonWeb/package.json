@@ -5,8 +5,8 @@
   "devDependencies": {
   },
   "dependencies": {
-   
-
-    "gentelella": "1.4.0"
+    "gentelella": "1.4.0",
+    "jquery-validation": "1.17.0",
+  "jquery-validation-unobtrusive": "3.2.10"
   }
 }

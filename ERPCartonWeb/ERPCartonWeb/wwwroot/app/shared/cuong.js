@@ -4,15 +4,30 @@
         pageIndex: 1
     },
     notify: function (message, type) {
-        $.pnotify(message, {
-            title: 'Animate.css Effect',
-            text: message,
+        new  PNotify ({
+            title: message,
             type: type,
+            buttons: {
+                closerHover: true,
+                sticker: false //ugly
+            },
+            text: message,
+            nonblock: {
+                nonblock: false
+            },
+            saddclass: 'dark',
+            styling: 'bootstrap3',
+            
             animate: {
                 animate: true,
                 in_class: 'zoomInLeft',
                 out_class: 'zoomOutRight'
-            }
+            },
+            hide: true,
+            delay: 8000,
+            remove: true
+            
+           
         })
     },
     confirm: function (message, okCallback) {
@@ -20,7 +35,8 @@
             text: message,
             icon: 'glyphicon glyphicon-question-sign',
             hide: false,
-
+            //buttons: { close: true },
+            //icon: 'true',
             confirm: {
                 confirm: true,
                 buttons: [{
@@ -70,7 +86,7 @@
     },
 
     dateFormatJson: function (datetime) {
-        if (datetime == null || datetime == '')
+        if (datetime == null || datetime =='')
             return '';
         var newdate = new Date(parseInt(datetime.substr(6)));
         var month = newdate.getMonth() + 1;
@@ -150,3 +166,9 @@
         return roots;
     }
 }
+$(document).ajaxSend(function (e, xhr, options) {
+    if (options.type.toUpperCase() == "POST" || options.type.toUpperCase() == "PUT") {
+        var token = $('form').find("input[name='__RequestVerificationToken']").val();
+        xhr.setRequestHeader("RequestVerificationToken", token);
+    }
+});

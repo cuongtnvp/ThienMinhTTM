@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using ERPCartonWeb.Extensions;
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,20 +9,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gentelella Alela! | </title>
     <!-- Bootstrap -->
-    <link href="~/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="~/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="~/vendor/nprogress/nprogress.css" rel="stylesheet">
+    <link href="~/lib/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
-    <link href="~/vendor/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link href="~/lib/iCheck/skins/flat/green.css" rel="stylesheet">
 
     <!-- bootstrap-progressbar -->
-    <link href="~/vendor/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <link href="~/lib/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
     <!-- JQVMap -->
-    <link href="~/vendor/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <link href="~/lib/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
     <!-- bootstrap-daterangepicker -->
-    <link href="~/vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="~/lib/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="~/lib/pnotify/dist/pnotify.brighttheme.css" rel="stylesheet" />
+    <link href="~/lib/pnotify/dist/pnotify.history.css" rel="stylesheet" />
+    <link href="~/lib/pnotify/dist/pnotify.material.css" rel="stylesheet" />
+    <link href="~/lib/pnotify/dist/pnotify.mobile.css" rel="stylesheet" />
+    <link href="~/lib/pnotify/dist/pnotify.nonblock.css" rel="stylesheet" />
+    <link href="~/lib/pnotify/dist/pnotify.buttons.css" rel="stylesheet" />
+    <link href="~/lib/pnotify/dist/pnotify.css" rel="stylesheet" />
+
+
     <!-- Custom Theme Style -->
 
     <link href="~/admin-side/css/custom.min.css" rel="stylesheet" />
@@ -42,7 +52,8 @@
                         </div>
                         <div class="profile_info">
                             <span>Welcome,</span>
-                            <h2>John Doe</h2>
+                            
+                            <h2>@User.GetSpecificClaim("FullName")</h2>
                         </div>
                     </div>
                     <!-- /menu profile quick info -->
@@ -191,7 +202,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="">
                                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                    <img src="~/admin-side/images/img.jpg" alt="">John Doe
+                                    <img src="~/admin-side/images/img.jpg" alt="">@User.GetSpecificClaim("FullName")
                                     <span class=" fa fa-angle-down"></span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -287,48 +298,54 @@
         </div>
     </div>
     <!-- jQuery -->
-    <script src="~/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="~/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->
-    <script src="~/vendor/fastclick/lib/fastclick.js"></script>
+    <script src="~/lib/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="~/vendor/nprogress/nprogress.js"></script>
+    <script src="~/lib/nprogress/nprogress.js"></script>
     <!-- Chart.js -->
-    <script src="~/vendor/Chart.js/dist/Chart.min.js"></script>
+    <script src="~/lib/Chart.js/dist/Chart.min.js"></script>
     <!-- gauge.js -->
-    <script src="~/vendor/gauge.js/dist/gauge.min.js"></script>
+    <script src="~/lib/gauge.js/dist/gauge.min.js"></script>
     <!-- bootstrap-progressbar -->
-    <script src="~/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="~/lib/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- iCheck -->
-    <script src="~/vendor/iCheck/icheck.min.js"></script>
+    <script src="~/lib/iCheck/icheck.min.js"></script>
     <!-- Skycons -->
-    <script src="~/vendor/skycons/skycons.js"></script>
+    <script src="~/lib/skycons/skycons.js"></script>
     <!-- Flot -->
-    <script src="~/vendor/Flot/jquery.flot.js"></script>
-    <script src="~/vendor/Flot/jquery.flot.pie.js"></script>
-    <script src="~/vendor/Flot/jquery.flot.time.js"></script>
-    <script src="~/vendor/Flot/jquery.flot.stack.js"></script>
-    <script src="~/vendor/Flot/jquery.flot.resize.js"></script>
+    <script src="~/lib/Flot/jquery.flot.js"></script>
+    <script src="~/lib/Flot/jquery.flot.pie.js"></script>
+    <script src="~/lib/Flot/jquery.flot.time.js"></script>
+    <script src="~/lib/Flot/jquery.flot.stack.js"></script>
+    <script src="~/lib/Flot/jquery.flot.resize.js"></script>
     <!-- Flot plugins -->
-    <script src="~/vendor/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-    <script src="~/vendor/flot-spline/js/jquery.flot.spline.min.js"></script>
-    <script src="~/vendor/flot.curvedlines/curvedLines.js"></script>
+    <script src="~/lib/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="~/lib/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="~/lib/flot.curvedlines/curvedLines.js"></script>
     <!-- DateJS -->
-    <script src="~/vendor/DateJS/build/date.js"></script>
+    <script src="~/lib/DateJS/build/date.js"></script>
     <!-- JQVMap -->
-    <script src="~/vendor/jqvmap/dist/jquery.vmap.js"></script>
-    <script src="~/vendor/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-    <script src="~/vendor/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <script src="~/lib/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="~/lib/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="~/lib/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
     <!-- bootstrap-daterangepicker -->
-    <script src="~/vendor/moment/min/moment.min.js"></script>
-    <script src="~/vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="~/lib/moment/min/moment.min.js"></script>
+    <script src="~/lib/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!--pnotify-->
+    <script src="~/lib/pnotify/dist/pnotify.js"></script>
+    <script src="~/lib/pnotify/dist/pnotify.buttons.js"></script>
+    <script src="~/lib/pnotify/dist/pnotify.nonblock.js"></script>
+
+
 
     <!--Cuong custom js-->
     <script src="~/app/shared/cuong.js"></script>
     <!-- Custom Theme Scripts -->
-
-    <script src="~/admin-side/js/custom.min.js"></script>
+    <script src="~/admin-side/js/custom.js"></script>
+    @*<script src="~/admin-side/js/custom.min.js"></script>*@
 
 </body>
 </html>
