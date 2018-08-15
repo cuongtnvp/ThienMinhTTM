@@ -1,0 +1,1642 @@
+2018-08-15T08:59:00.2095507+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T08:59:01.1625279+07:00  [INF] Executed DbCommand ("137"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T08:59:01.2298171+07:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T08:59:01.3189359+07:00  [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-08-15T08:59:01.3933155+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-08-15T08:59:01.4327774+07:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-08-15T08:59:01.5738406+07:00  [INF] Executed DbCommand ("46"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-08-15T08:59:01.7820580+07:00  [INF] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-08-15T08:59:01.9387570+07:00  [INF] Executed DbCommand ("104"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-08-15T08:59:02.2214132+07:00  [INF] Executed DbCommand ("203"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-08-15T08:59:02.3690091+07:00  [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T08:59:02.4254080+07:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T08:59:02.4996498+07:00  [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T08:59:05.0402069+07:00 0HLG2AAMBPA2A:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/   (ca22a1cb)
+2018-08-15T08:59:05.9597197+07:00 0HLG2AAMBPA2A:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2018-08-15T08:59:05.9895061+07:00 0HLG2AAMBPA2A:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-08-15T08:59:06.0193678+07:00 0HLG2AAMBPA2A:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-08-15T08:59:06.0559329+07:00 0HLG2AAMBPA2A:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-08-15T08:59:06.1145213+07:00 0HLG2AAMBPA2A:00000001 [INF] Executed action "ERPCartonWeb.Controllers.HomeController.Index (ERPCartonWeb)" in 142.4649ms (afa2e885)
+2018-08-15T08:59:06.4646670+07:00 0HLG2AAMBPA2A:00000001 [INF] Request finished in 1404.5743ms 302  (791a596a)
+2018-08-15T08:59:06.5530322+07:00 0HLG2AAMBPA2A:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2018-08-15T08:59:06.9265779+07:00 0HLG2AAMBPA2A:00000002 [INF] Executing action method "ERPCartonWeb.Controllers.AccountController.Login (ERPCartonWeb)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2018-08-15T08:59:06.9841881+07:00 0HLG2AAMBPA2A:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-08-15T08:59:15.0916265+07:00 0HLG2AAMBPA2A:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2018-08-15T08:59:17.0390961+07:00 0HLG2AAMBPA2B:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-08-15T08:59:17.0924905+07:00 0HLG2AAMBPA2A:00000002 [INF] Executed action "ERPCartonWeb.Controllers.AccountController.Login (ERPCartonWeb)" in 10153.8252ms (afa2e885)
+2018-08-15T08:59:17.1410004+07:00 0HLG2AAMBPA2C:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/css/site.css   (ca22a1cb)
+2018-08-15T08:59:17.1524089+07:00 0HLG2AAMBPA2D:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-08-15T08:59:17.1592249+07:00 0HLG2AAMBPA2B:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-08-15T08:59:17.1824303+07:00 0HLG2AAMBPA2E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-08-15T08:59:17.2274483+07:00 0HLG2AAMBPA2E:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-08-15T08:59:17.2882750+07:00 0HLG2AAMBPA2A:00000002 [INF] Request finished in 10568.9256ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T08:59:17.3820150+07:00 0HLG2AAMBPA2F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-08-15T08:59:17.4263117+07:00 0HLG2AAMBPA2D:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-08-15T08:59:17.4849494+07:00 0HLG2AAMBPA2C:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\css\site.css"' (27b0a520)
+2018-08-15T08:59:17.8405429+07:00 0HLG2AAMBPA2E:00000001 [INF] Request finished in 617.6998ms 200 application/javascript (791a596a)
+2018-08-15T08:59:17.8870047+07:00 0HLG2AAMBPA2F:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\js\site.js"' (27b0a520)
+2018-08-15T08:59:17.8904541+07:00 0HLG2AAMBPA2B:00000001 [INF] Request finished in 649.0141ms 200 text/css (791a596a)
+2018-08-15T08:59:17.9636516+07:00 0HLG2AAMBPA2A:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-08-15T08:59:17.9808635+07:00 0HLG2AAMBPA2B:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-08-15T08:59:18.0214439+07:00 0HLG2AAMBPA2F:00000001 [INF] Request finished in 590.9253ms 200 application/javascript (791a596a)
+2018-08-15T08:59:18.0311020+07:00 0HLG2AAMBPA2C:00000001 [INF] Request finished in 1075.4081ms 200 text/css (791a596a)
+2018-08-15T08:59:18.0516006+07:00 0HLG2AAMBPA2B:00000002 [INF] Request finished in 81.6162ms 404  (791a596a)
+2018-08-15T08:59:18.0654068+07:00 0HLG2AAMBPA2A:00000003 [INF] Request finished in 678.4261ms 404  (791a596a)
+2018-08-15T08:59:18.1300053+07:00 0HLG2AAMBPA2D:00000001 [INF] Request finished in 1250.1191ms 200 application/javascript (791a596a)
+2018-08-15T08:59:18.1606471+07:00 0HLG2AAMBPA2D:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-08-15T08:59:18.1909238+07:00 0HLG2AAMBPA2D:00000002 [INF] Request finished in 10.356ms 404  (791a596a)
+2018-08-15T08:59:18.2206266+07:00 0HLG2AAMBPA2D:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-08-15T08:59:18.2868608+07:00 0HLG2AAMBPA2D:00000003 [INF] Request finished in 28.3128ms 404  (791a596a)
+2018-08-15T08:59:18.3376364+07:00 0HLG2AAMBPA2D:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51957/favicon.ico   (ca22a1cb)
+2018-08-15T08:59:18.3753776+07:00 0HLG2AAMBPA2D:00000004 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\favicon.ico"' (27b0a520)
+2018-08-15T08:59:18.4101178+07:00 0HLG2AAMBPA2D:00000004 [INF] Request finished in 65.9527ms 200 image/x-icon (791a596a)
+2018-08-15T08:59:33.7361593+07:00 0HLG2AAMBPA2D:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin   (ca22a1cb)
+2018-08-15T08:59:33.7984026+07:00 0HLG2AAMBPA2D:00000005 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T08:59:34.2521730+07:00 0HLG2AAMBPA2D:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-08-15T08:59:34.3298031+07:00 0HLG2AAMBPA2D:00000005 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" in 573.1926ms (afa2e885)
+2018-08-15T08:59:34.3527791+07:00 0HLG2AAMBPA2D:00000005 [INF] Request finished in 655.975ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T08:59:34.4226440+07:00 0HLG2AAMBPA2A:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-08-15T08:59:34.4565031+07:00 0HLG2AAMBPA2C:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/animate.css/animate.min.css   (ca22a1cb)
+2018-08-15T08:59:34.4652090+07:00 0HLG2AAMBPA2E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.history.css   (ca22a1cb)
+2018-08-15T08:59:34.5128064+07:00 0HLG2AAMBPA2F:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.brighttheme.css   (ca22a1cb)
+2018-08-15T08:59:34.5262113+07:00 0HLG2AAMBPA2C:00000002 [INF] Sending file. Request path: '"/lib/animate.css/animate.min.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\animate.css\animate.min.css"' (27b0a520)
+2018-08-15T08:59:34.5511506+07:00 0HLG2AAMBPA2A:00000004 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\nprogress\nprogress.css"' (27b0a520)
+2018-08-15T08:59:34.5698337+07:00 0HLG2AAMBPA2E:00000002 [INF] Sending file. Request path: '"/lib/pnotify/dist/pnotify.history.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\pnotify\dist\pnotify.history.css"' (27b0a520)
+2018-08-15T08:59:34.6019144+07:00 0HLG2AAMBPA2D:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap/dist/css/bootstrap.min.css   (ca22a1cb)
+2018-08-15T08:59:34.6760574+07:00 0HLG2AAMBPA2B:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/font-awesome/css/font-awesome.min.css   (ca22a1cb)
+2018-08-15T08:59:34.6940214+07:00 0HLG2AAMBPA2A:00000004 [INF] Request finished in 212.8478ms 200 text/css (791a596a)
+2018-08-15T08:59:34.7146193+07:00 0HLG2AAMBPA2C:00000002 [INF] Request finished in 244.8103ms 200 text/css (791a596a)
+2018-08-15T08:59:34.7607300+07:00 0HLG2AAMBPA2F:00000002 [INF] Sending file. Request path: '"/lib/pnotify/dist/pnotify.brighttheme.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\pnotify\dist\pnotify.brighttheme.css"' (27b0a520)
+2018-08-15T08:59:34.8047105+07:00 0HLG2AAMBPA2E:00000002 [INF] Request finished in 342.8347ms 200 text/css (791a596a)
+2018-08-15T08:59:34.8367108+07:00 0HLG2AAMBPA2D:00000006 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"' (27b0a520)
+2018-08-15T08:59:34.8856360+07:00 0HLG2AAMBPA2A:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.material.css   (ca22a1cb)
+2018-08-15T08:59:34.9641256+07:00 0HLG2AAMBPA2C:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.mobile.css   (ca22a1cb)
+2018-08-15T08:59:35.0243831+07:00 0HLG2AAMBPA2B:00000003 [INF] Sending file. Request path: '"/lib/font-awesome/css/font-awesome.min.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\font-awesome\css\font-awesome.min.css"' (27b0a520)
+2018-08-15T08:59:35.1526804+07:00 0HLG2AAMBPA2A:00000005 [INF] Sending file. Request path: '"/lib/pnotify/dist/pnotify.material.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\pnotify\dist\pnotify.material.css"' (27b0a520)
+2018-08-15T08:59:35.2320161+07:00 0HLG2AAMBPA2D:00000006 [INF] Request finished in 563.0421ms 200 text/css (791a596a)
+2018-08-15T08:59:35.2654388+07:00 0HLG2AAMBPA2C:00000003 [INF] Sending file. Request path: '"/lib/pnotify/dist/pnotify.mobile.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\pnotify\dist\pnotify.mobile.css"' (27b0a520)
+2018-08-15T08:59:35.4989672+07:00 0HLG2AAMBPA2F:00000002 [INF] Request finished in 535.3175ms 200 text/css (791a596a)
+2018-08-15T08:59:35.8349469+07:00 0HLG2AAMBPA2E:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.nonblock.css   (ca22a1cb)
+2018-08-15T08:59:35.8541882+07:00 0HLG2AAMBPA2A:00000005 [INF] Request finished in 546.2963ms 200 text/css (791a596a)
+2018-08-15T08:59:35.8949105+07:00 0HLG2AAMBPA2C:00000003 [INF] Request finished in 643.3795ms 200 text/css (791a596a)
+2018-08-15T08:59:35.9300355+07:00 0HLG2AAMBPA2B:00000003 [INF] Request finished in 1461.6779ms 200 text/css (791a596a)
+2018-08-15T08:59:35.9460399+07:00 0HLG2AAMBPA2D:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.css   (ca22a1cb)
+2018-08-15T08:59:36.0100171+07:00 0HLG2AAMBPA2E:00000003 [INF] Sending file. Request path: '"/lib/pnotify/dist/pnotify.nonblock.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\pnotify\dist\pnotify.nonblock.css"' (27b0a520)
+2018-08-15T08:59:36.0312576+07:00 0HLG2AAMBPA2C:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery/dist/jquery.min.js   (ca22a1cb)
+2018-08-15T08:59:36.0361765+07:00 0HLG2AAMBPA2A:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin-side/css/custom.min.css   (ca22a1cb)
+2018-08-15T08:59:36.0480879+07:00 0HLG2AAMBPA2F:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.buttons.css   (ca22a1cb)
+2018-08-15T08:59:36.0582403+07:00 0HLG2AAMBPA2D:00000007 [INF] Sending file. Request path: '"/lib/pnotify/dist/pnotify.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\pnotify\dist\pnotify.css"' (27b0a520)
+2018-08-15T08:59:36.0787984+07:00 0HLG2AAMBPA2C:00000004 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\jquery\dist\jquery.min.js"' (27b0a520)
+2018-08-15T08:59:36.0906571+07:00 0HLG2AAMBPA2B:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.js   (ca22a1cb)
+2018-08-15T08:59:36.1947516+07:00 0HLG2AAMBPA2A:00000006 [INF] Sending file. Request path: '"/admin-side/css/custom.min.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\admin-side\css\custom.min.css"' (27b0a520)
+2018-08-15T08:59:36.2112210+07:00 0HLG2AAMBPA2D:00000007 [INF] Request finished in 278.003ms 200 text/css (791a596a)
+2018-08-15T08:59:36.2133027+07:00 0HLG2AAMBPA2B:00000004 [INF] Sending file. Request path: '"/lib/pnotify/dist/pnotify.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\pnotify\dist\pnotify.js"' (27b0a520)
+2018-08-15T08:59:36.2330481+07:00 0HLG2AAMBPA2F:00000003 [INF] Sending file. Request path: '"/lib/pnotify/dist/pnotify.buttons.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\pnotify\dist\pnotify.buttons.css"' (27b0a520)
+2018-08-15T08:59:36.2664586+07:00 0HLG2AAMBPA2C:00000004 [INF] Request finished in 195.5456ms 200 application/javascript (791a596a)
+2018-08-15T08:59:36.2773380+07:00 0HLG2AAMBPA2E:00000003 [INF] Request finished in 973.8428ms 200 text/css (791a596a)
+2018-08-15T08:59:36.2982033+07:00 0HLG2AAMBPA2D:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.nonblock.js   (ca22a1cb)
+2018-08-15T08:59:36.3265279+07:00 0HLG2AAMBPA2B:00000004 [INF] Request finished in 204.0206ms 200 application/javascript (791a596a)
+2018-08-15T08:59:36.3662845+07:00 0HLG2AAMBPA2C:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/validator/validator.js   (ca22a1cb)
+2018-08-15T08:59:36.4124278+07:00 0HLG2AAMBPA2F:00000003 [INF] Request finished in 368.9532ms 200 text/css (791a596a)
+2018-08-15T08:59:36.4334692+07:00 0HLG2AAMBPA2D:00000008 [INF] Sending file. Request path: '"/lib/pnotify/dist/pnotify.nonblock.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\pnotify\dist\pnotify.nonblock.js"' (27b0a520)
+2018-08-15T08:59:36.4930223+07:00 0HLG2AAMBPA2C:00000005 [INF] Sending file. Request path: '"/lib/validator/validator.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\validator\validator.js"' (27b0a520)
+2018-08-15T08:59:36.5595182+07:00 0HLG2AAMBPA2B:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:51957/app/shared/cuong.js   (ca22a1cb)
+2018-08-15T08:59:36.5686876+07:00 0HLG2AAMBPA2E:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.buttons.js   (ca22a1cb)
+2018-08-15T08:59:36.5933998+07:00 0HLG2AAMBPA2A:00000006 [INF] Request finished in 424.7782ms 200 text/css (791a596a)
+2018-08-15T08:59:36.6531149+07:00 0HLG2AAMBPA2D:00000008 [INF] Request finished in 252.4914ms 200 application/javascript (791a596a)
+2018-08-15T08:59:36.6596385+07:00 0HLG2AAMBPA2C:00000005 [INF] Request finished in 193.2898ms 200 application/javascript (791a596a)
+2018-08-15T08:59:36.6730779+07:00 0HLG2AAMBPA2B:00000005 [INF] Sending file. Request path: '"/app/shared/cuong.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\app\shared\cuong.js"' (27b0a520)
+2018-08-15T08:59:36.6972728+07:00 0HLG2AAMBPA2F:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51957/app/controllers/login/index.js   (ca22a1cb)
+2018-08-15T08:59:36.7475060+07:00 0HLG2AAMBPA2F:00000004 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2018-08-15T08:59:36.7648662+07:00 0HLG2AAMBPA2E:00000004 [INF] Sending file. Request path: '"/lib/pnotify/dist/pnotify.buttons.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\pnotify\dist\pnotify.buttons.js"' (27b0a520)
+2018-08-15T08:59:36.7725405+07:00 0HLG2AAMBPA2B:00000005 [INF] Request finished in 265.7935ms 200 application/javascript (791a596a)
+2018-08-15T08:59:36.8728364+07:00 0HLG2AAMBPA2F:00000004 [INF] Request finished in 261.0183ms 200 application/javascript (791a596a)
+2018-08-15T08:59:36.8758572+07:00 0HLG2AAMBPA2A:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3   (ca22a1cb)
+2018-08-15T08:59:36.8968227+07:00 0HLG2AAMBPA2E:00000004 [INF] Request finished in 482.7105ms 200 application/javascript (791a596a)
+2018-08-15T08:59:36.9122073+07:00 0HLG2AAMBPA2A:00000007 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-08-15T08:59:37.0171267+07:00 0HLG2AAMBPA2A:00000007 [INF] Request finished in 234.5866ms 200 font/woff2 (791a596a)
+2018-08-15T08:59:45.9367473+07:00 0HLG2AAMBPA2A:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:51957/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-08-15T08:59:46.0372938+07:00 0HLG2AAMBPA2A:00000008 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" with arguments (["ERPCartonWeb.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-08-15T08:59:46.0805093+07:00 0HLG2AAMBPA2A:00000008 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T08:59:46.2723913+07:00 0HLG2AAMBPA2A:00000008 [INF] Executed DbCommand ("122"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-08-15T08:59:46.5529734+07:00 0HLG2AAMBPA2A:00000008 [INF] Executed DbCommand ("105"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-08-15T08:59:46.6511954+07:00 0HLG2AAMBPA2A:00000008 [INF] Executed DbCommand ("29"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T08:59:46.7298193+07:00 0HLG2AAMBPA2A:00000008 [INF] Executed DbCommand ("39"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-08-15T08:59:46.8136154+07:00 0HLG2AAMBPA2A:00000008 [INF] Executed DbCommand ("39"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-08-15T08:59:46.8734800+07:00 0HLG2AAMBPA2A:00000008 [INF] Executed DbCommand ("48"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T08:59:46.8974496+07:00 0HLG2AAMBPA2A:00000008 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-08-15T08:59:46.9114158+07:00 0HLG2AAMBPA2A:00000008 [INF] User logged in. (fdce0db4)
+2018-08-15T08:59:46.9396395+07:00 0HLG2AAMBPA2A:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-08-15T08:59:47.0203030+07:00 0HLG2AAMBPA2A:00000008 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" in 1059.6244ms (afa2e885)
+2018-08-15T08:59:47.0519557+07:00 0HLG2AAMBPA2A:00000008 [INF] Request finished in 1093.4191ms 200 application/json; charset=utf-8 (791a596a)
+2018-08-15T08:59:47.1691995+07:00 0HLG2AAMBPA2A:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T08:59:47.2082677+07:00 0HLG2AAMBPA2A:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T08:59:47.2844518+07:00 0HLG2AAMBPA2A:00000009 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T08:59:59.0720651+07:00 0HLG2AAMBPA2A:00000009 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T09:00:25.2381271+07:00 0HLG2AAMBPA2A:00000009 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T09:00:49.2933086+07:00 0HLG2AAMBPA2A:00000009 [INF] Executed DbCommand ("61"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-08-15T09:01:16.4131947+07:00  [WRN] Heartbeat took longer than "00:00:01" at "08/15/2018 02:01:08 +00:00". (439152bf)
+2018-08-15T09:01:44.1378377+07:00 0HLG2AAMBPA2A:00000009 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" in 116769.9129ms (afa2e885)
+2018-08-15T09:01:44.1942715+07:00 0HLG2AAMBPA2E:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/iCheck/skins/flat/green.css   (ca22a1cb)
+2018-08-15T09:01:44.2073996+07:00 0HLG2AAMBPA2F:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css   (ca22a1cb)
+2018-08-15T09:01:44.2200968+07:00 0HLG2AAMBPA2C:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-08-15T09:01:44.2681296+07:00 0HLG2AAMBPA2F:00000005 [INF] Sending file. Request path: '"/lib/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\bootstrap-progressbar\css\bootstrap-progressbar-3.3.4.min.css"' (27b0a520)
+2018-08-15T09:01:44.2881124+07:00 0HLG2AAMBPA2C:00000006 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-08-15T09:01:44.3056500+07:00 0HLG2AAMBPA2E:00000005 [INF] Sending file. Request path: '"/lib/iCheck/skins/flat/green.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\iCheck\skins\flat\green.css"' (27b0a520)
+2018-08-15T09:01:44.3376353+07:00 0HLG2AAMBPA2B:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jqvmap/dist/jqvmap.min.css   (ca22a1cb)
+2018-08-15T09:01:44.3542874+07:00 0HLG2AAMBPA2F:00000005 [INF] Request finished in 255.8763ms 200 text/css (791a596a)
+2018-08-15T09:01:44.3688987+07:00 0HLG2AAMBPA2E:00000005 [INF] Request finished in 283.552ms 200 text/css (791a596a)
+2018-08-15T09:01:44.3873876+07:00 0HLG2AAMBPA2C:00000006 [INF] Request finished in 283.4628ms 200 text/css (791a596a)
+2018-08-15T09:01:44.3978609+07:00 0HLG2AAMBPA2A:00000009 [INF] Request finished in 117054.7851ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T09:01:44.4079454+07:00 0HLG2AAMBPA2B:00000006 [INF] Sending file. Request path: '"/lib/jqvmap/dist/jqvmap.min.css"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\jqvmap\dist\jqvmap.min.css"' (27b0a520)
+2018-08-15T09:01:44.4273319+07:00 0HLG2AAMBPA2E:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap/dist/js/bootstrap.min.js   (ca22a1cb)
+2018-08-15T09:01:44.4488845+07:00 0HLG2AAMBPA2E:00000006 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.min.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js"' (27b0a520)
+2018-08-15T09:01:44.4723033+07:00 0HLG2AAMBPA2B:00000006 [INF] Request finished in 296.3432ms 200 text/css (791a596a)
+2018-08-15T09:01:44.5289227+07:00 0HLG2AAMBPA2E:00000006 [INF] Request finished in 105.1477ms 200 application/javascript (791a596a)
+2018-08-15T09:01:44.5567216+07:00 0HLG2AAMBPA2E:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-08-15T09:01:44.5706984+07:00 0HLG2AAMBPA2E:00000007 [INF] Sending file. Request path: '"/lib/fastclick/lib/fastclick.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\fastclick\lib\fastclick.js"' (27b0a520)
+2018-08-15T09:01:44.5960250+07:00 0HLG2AAMBPA2E:00000007 [INF] Request finished in 25.7691ms 200 application/javascript (791a596a)
+2018-08-15T09:01:44.6245870+07:00 0HLG2AAMBPA2E:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/nprogress/nprogress.js   (ca22a1cb)
+2018-08-15T09:01:44.6467915+07:00 0HLG2AAMBPA2E:00000008 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\nprogress\nprogress.js"' (27b0a520)
+2018-08-15T09:01:44.7280132+07:00 0HLG2AAMBPA2E:00000008 [INF] Request finished in 35.3242ms 200 application/javascript (791a596a)
+2018-08-15T09:01:44.8355408+07:00 0HLG2AAMBPA2E:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/Chart.js/dist/Chart.min.js   (ca22a1cb)
+2018-08-15T09:01:44.8848422+07:00 0HLG2AAMBPA2E:00000009 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.min.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\Chart.js\dist\Chart.min.js"' (27b0a520)
+2018-08-15T09:01:45.1598492+07:00 0HLG2AAMBPA2B:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/gauge.js/dist/gauge.min.js   (ca22a1cb)
+2018-08-15T09:01:45.3109206+07:00 0HLG2AAMBPA2C:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap-progressbar/bootstrap-progressbar.min.js   (ca22a1cb)
+2018-08-15T09:01:45.3756666+07:00 0HLG2AAMBPA2A:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/skycons/skycons.js   (ca22a1cb)
+2018-08-15T09:01:45.5122374+07:00 0HLG2AAMBPA2B:00000007 [INF] Sending file. Request path: '"/lib/gauge.js/dist/gauge.min.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\gauge.js\dist\gauge.min.js"' (27b0a520)
+2018-08-15T09:01:45.5317542+07:00 0HLG2AAMBPA2D:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/Flot/jquery.flot.js   (ca22a1cb)
+2018-08-15T09:01:45.5567090+07:00 0HLG2AAMBPA2F:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/iCheck/icheck.min.js   (ca22a1cb)
+2018-08-15T09:01:45.5686891+07:00 0HLG2AAMBPA2C:00000007 [INF] Sending file. Request path: '"/lib/bootstrap-progressbar/bootstrap-progressbar.min.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\bootstrap-progressbar\bootstrap-progressbar.min.js"' (27b0a520)
+2018-08-15T09:01:45.5732599+07:00 0HLG2AAMBPA2A:0000000A [INF] Sending file. Request path: '"/lib/skycons/skycons.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\skycons\skycons.js"' (27b0a520)
+2018-08-15T09:01:45.6049603+07:00 0HLG2AAMBPA2B:00000007 [INF] Request finished in 658.3337ms 200 application/javascript (791a596a)
+2018-08-15T09:01:45.6256800+07:00 0HLG2AAMBPA2D:00000009 [INF] Sending file. Request path: '"/lib/Flot/jquery.flot.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\Flot\jquery.flot.js"' (27b0a520)
+2018-08-15T09:01:45.6333110+07:00 0HLG2AAMBPA2A:0000000A [INF] Request finished in 713.4745ms 200 application/javascript (791a596a)
+2018-08-15T09:01:45.6493086+07:00 0HLG2AAMBPA2F:00000006 [INF] Sending file. Request path: '"/lib/iCheck/icheck.min.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\iCheck\icheck.min.js"' (27b0a520)
+2018-08-15T09:01:45.6762853+07:00 0HLG2AAMBPA2B:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-08-15T09:01:45.6969333+07:00 0HLG2AAMBPA2A:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin-side/images/img.jpg   (ca22a1cb)
+2018-08-15T09:01:45.7205320+07:00 0HLG2AAMBPA2B:00000008 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-08-15T09:01:45.7409373+07:00 0HLG2AAMBPA2C:00000007 [INF] Request finished in 771.5903ms 200 application/javascript (791a596a)
+2018-08-15T09:01:45.8712010+07:00 0HLG2AAMBPA2A:0000000B [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-08-15T09:01:45.8764875+07:00 0HLG2AAMBPA2B:00000008 [INF] Request finished in 126.3202ms 200 font/woff2 (791a596a)
+2018-08-15T09:01:45.8927100+07:00 0HLG2AAMBPA2F:00000006 [INF] Request finished in 784.3998ms 200 application/javascript (791a596a)
+2018-08-15T09:01:45.9447072+07:00 0HLG2AAMBPA2A:0000000B [INF] Request finished in 231.3492ms 200 image/jpeg (791a596a)
+2018-08-15T09:01:45.9589905+07:00 0HLG2AAMBPA2B:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/Flot/jquery.flot.stack.js   (ca22a1cb)
+2018-08-15T09:01:45.9882526+07:00 0HLG2AAMBPA2F:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/Flot/jquery.flot.time.js   (ca22a1cb)
+2018-08-15T09:01:46.0213138+07:00 0HLG2AAMBPA2B:00000009 [INF] Sending file. Request path: '"/lib/Flot/jquery.flot.stack.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\Flot\jquery.flot.stack.js"' (27b0a520)
+2018-08-15T09:01:46.0637237+07:00 0HLG2AAMBPA2A:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/Flot/jquery.flot.resize.js   (ca22a1cb)
+2018-08-15T09:01:46.0775007+07:00 0HLG2AAMBPA2C:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/Flot/jquery.flot.pie.js   (ca22a1cb)
+2018-08-15T09:01:46.0994127+07:00 0HLG2AAMBPA2C:00000008 [INF] Sending file. Request path: '"/lib/Flot/jquery.flot.pie.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\Flot\jquery.flot.pie.js"' (27b0a520)
+2018-08-15T09:01:46.1272662+07:00 0HLG2AAMBPA2F:00000007 [INF] Sending file. Request path: '"/lib/Flot/jquery.flot.time.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\Flot\jquery.flot.time.js"' (27b0a520)
+2018-08-15T09:01:46.1345518+07:00 0HLG2AAMBPA2B:00000009 [INF] Request finished in 102.7906ms 200 application/javascript (791a596a)
+2018-08-15T09:01:46.1556535+07:00 0HLG2AAMBPA2A:0000000C [INF] Sending file. Request path: '"/lib/Flot/jquery.flot.resize.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\Flot\jquery.flot.resize.js"' (27b0a520)
+2018-08-15T09:01:46.1933324+07:00 0HLG2AAMBPA2B:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/flot.orderbars/js/jquery.flot.orderBars.js   (ca22a1cb)
+2018-08-15T09:01:46.2149828+07:00 0HLG2AAMBPA2A:0000000C [INF] Request finished in 204.6289ms 200 application/javascript (791a596a)
+2018-08-15T09:01:46.2318777+07:00 0HLG2AAMBPA2B:0000000A [INF] Sending file. Request path: '"/lib/flot.orderbars/js/jquery.flot.orderBars.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\flot.orderbars\js\jquery.flot.orderBars.js"' (27b0a520)
+2018-08-15T09:01:46.3042358+07:00 0HLG2AAMBPA2F:00000007 [INF] Request finished in 234.0712ms 200 application/javascript (791a596a)
+2018-08-15T09:01:46.3305071+07:00 0HLG2AAMBPA2B:0000000A [INF] Request finished in 88.0366ms 200 application/javascript (791a596a)
+2018-08-15T09:01:46.3435662+07:00 0HLG2AAMBPA2C:00000008 [INF] Request finished in 168.735ms 200 application/javascript (791a596a)
+2018-08-15T09:01:46.3602793+07:00 0HLG2AAMBPA2A:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/DateJS/build/date.js   (ca22a1cb)
+2018-08-15T09:01:46.3722264+07:00 0HLG2AAMBPA2B:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jqvmap/dist/jquery.vmap.js   (ca22a1cb)
+2018-08-15T09:01:46.3835427+07:00 0HLG2AAMBPA2F:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/flot.curvedlines/curvedLines.js   (ca22a1cb)
+2018-08-15T09:01:46.4056588+07:00 0HLG2AAMBPA2B:0000000B [INF] Sending file. Request path: '"/lib/jqvmap/dist/jquery.vmap.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\jqvmap\dist\jquery.vmap.js"' (27b0a520)
+2018-08-15T09:01:46.4387135+07:00 0HLG2AAMBPA2A:0000000D [INF] Sending file. Request path: '"/lib/DateJS/build/date.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\DateJS\build\date.js"' (27b0a520)
+2018-08-15T09:01:46.5010012+07:00 0HLG2AAMBPA2B:0000000B [INF] Request finished in 74.7739ms 200 application/javascript (791a596a)
+2018-08-15T09:01:46.5405310+07:00 0HLG2AAMBPA2F:00000008 [INF] Sending file. Request path: '"/lib/flot.curvedlines/curvedLines.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\flot.curvedlines\curvedLines.js"' (27b0a520)
+2018-08-15T09:01:46.5857584+07:00 0HLG2AAMBPA2E:00000009 [INF] Request finished in 1671.4041ms 200 application/javascript (791a596a)
+2018-08-15T09:01:46.5916422+07:00 0HLG2AAMBPA2B:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jqvmap/dist/maps/jquery.vmap.world.js   (ca22a1cb)
+2018-08-15T09:01:46.6016622+07:00 0HLG2AAMBPA2C:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/flot-spline/js/jquery.flot.spline.min.js   (ca22a1cb)
+2018-08-15T09:01:46.6266262+07:00 0HLG2AAMBPA2C:00000009 [INF] Sending file. Request path: '"/lib/flot-spline/js/jquery.flot.spline.min.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\flot-spline\js\jquery.flot.spline.min.js"' (27b0a520)
+2018-08-15T09:01:46.6714752+07:00 0HLG2AAMBPA2F:00000008 [INF] Request finished in 217.4228ms 200 application/javascript (791a596a)
+2018-08-15T09:01:46.7538533+07:00 0HLG2AAMBPA2B:0000000C [INF] Sending file. Request path: '"/lib/jqvmap/dist/maps/jquery.vmap.world.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\jqvmap\dist\maps\jquery.vmap.world.js"' (27b0a520)
+2018-08-15T09:01:46.8500115+07:00 0HLG2AAMBPA2E:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jqvmap/examples/js/jquery.vmap.sampledata.js   (ca22a1cb)
+2018-08-15T09:01:47.0338205+07:00 0HLG2AAMBPA2B:0000000C [INF] Request finished in 261.9259ms 200 application/javascript (791a596a)
+2018-08-15T09:01:47.0410652+07:00 0HLG2AAMBPA2E:0000000A [INF] Sending file. Request path: '"/lib/jqvmap/examples/js/jquery.vmap.sampledata.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\jqvmap\examples\js\jquery.vmap.sampledata.js"' (27b0a520)
+2018-08-15T09:01:47.0796825+07:00 0HLG2AAMBPA2F:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/moment/min/moment.min.js   (ca22a1cb)
+2018-08-15T09:01:47.1421704+07:00 0HLG2AAMBPA2E:0000000A [INF] Request finished in 426.7493ms 200 application/javascript (791a596a)
+2018-08-15T09:01:47.1677890+07:00 0HLG2AAMBPA2A:0000000D [INF] Request finished in 390.5399ms 200 application/javascript (791a596a)
+2018-08-15T09:01:47.1774221+07:00 0HLG2AAMBPA2B:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin-side/js/custom.js   (ca22a1cb)
+2018-08-15T09:01:47.2013614+07:00 0HLG2AAMBPA2F:00000009 [INF] Sending file. Request path: '"/lib/moment/min/moment.min.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\moment\min\moment.min.js"' (27b0a520)
+2018-08-15T09:01:47.2194645+07:00 0HLG2AAMBPA2A:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-08-15T09:01:47.2331542+07:00 0HLG2AAMBPA2B:0000000D [INF] Sending file. Request path: '"/admin-side/js/custom.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\admin-side\js\custom.js"' (27b0a520)
+2018-08-15T09:01:47.2400462+07:00 0HLG2AAMBPA2D:00000009 [INF] Request finished in 2246.7942ms 200 application/javascript (791a596a)
+2018-08-15T09:01:47.2741446+07:00 0HLG2AAMBPA2C:00000009 [INF] Request finished in 832.7641ms 200 application/javascript (791a596a)
+2018-08-15T09:01:47.3640716+07:00 0HLG2AAMBPA2A:0000000E [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-08-15T09:01:47.3944123+07:00 0HLG2AAMBPA2B:0000000D [INF] Request finished in 248.2475ms 200 application/javascript (791a596a)
+2018-08-15T09:01:47.4203787+07:00 0HLG2AAMBPA2F:00000009 [INF] Request finished in 480.8104ms 200 application/javascript (791a596a)
+2018-08-15T09:01:47.4763527+07:00 0HLG2AAMBPA2A:0000000E [INF] Request finished in 247.3213ms 200 application/javascript (791a596a)
+2018-08-15T09:01:47.9008242+07:00 0HLG2AAMBPA2A:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/iCheck/skins/flat/green@2x.png   (ca22a1cb)
+2018-08-15T09:01:47.9321086+07:00 0HLG2AAMBPA2A:0000000F [INF] Sending file. Request path: '"/lib/iCheck/skins/flat/green@2x.png"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\lib\iCheck\skins\flat\green@2x.png"' (27b0a520)
+2018-08-15T09:01:47.9787848+07:00 0HLG2AAMBPA2A:0000000F [INF] Request finished in 115.03ms 200 image/png (791a596a)
+2018-08-15T09:03:04.0666482+07:00 0HLG2AAMBPA2A:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin/slide/index   (ca22a1cb)
+2018-08-15T09:03:04.1293492+07:00 0HLG2AAMBPA2A:00000010 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T09:03:04.1479848+07:00 0HLG2AAMBPA2A:00000010 [INF] Request finished in 95.4201ms 404  (791a596a)
+2018-08-15T09:20:10.3992676+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T09:20:10.8893125+07:00  [INF] Executed DbCommand ("69"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T09:20:10.9409863+07:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T09:20:11.0009498+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-08-15T09:20:11.0637411+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-08-15T09:20:11.0961082+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-08-15T09:20:11.2083215+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-08-15T09:20:11.2915366+07:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-08-15T09:20:11.3334551+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-08-15T09:20:11.3888466+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-08-15T09:20:11.5211315+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T09:20:11.5697010+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T09:20:11.6094359+07:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T09:20:12.8003554+07:00 0HLG2AMGJ6B15:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/   (ca22a1cb)
+2018-08-15T09:20:13.3729417+07:00 0HLG2AMGJ6B15:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2018-08-15T09:20:13.4072244+07:00 0HLG2AMGJ6B15:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-08-15T09:20:13.4532710+07:00 0HLG2AMGJ6B15:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-08-15T09:20:13.4729212+07:00 0HLG2AMGJ6B15:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-08-15T09:20:13.5002226+07:00 0HLG2AMGJ6B15:00000001 [INF] Executed action "ERPCartonWeb.Controllers.HomeController.Index (ERPCartonWeb)" in 142.0333ms (afa2e885)
+2018-08-15T09:20:13.5225127+07:00 0HLG2AMGJ6B15:00000001 [INF] Request finished in 800.158ms 302  (791a596a)
+2018-08-15T09:20:13.7132790+07:00 0HLG2AMGJ6B15:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2018-08-15T09:20:13.7664516+07:00 0HLG2AMGJ6B15:00000002 [ERR] Request matched multiple actions resulting in ambiguity. Matching actions: "ERPCartonWeb.Controllers.AccountController.Login (ERPCartonWeb)
+ERPCartonWeb.Areas.Admin.Controllers.AccountController.Login (ERPCartonWeb)" (ab9a4111)
+2018-08-15T09:20:14.3775307+07:00 0HLG2AMGJ6B15:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+ERPCartonWeb.Controllers.AccountController.Login (ERPCartonWeb)
+ERPCartonWeb.Areas.Admin.Controllers.AccountController.Login (ERPCartonWeb)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-15T09:20:14.8875012+07:00 0HLG2AMGJ6B15:00000002 [INF] Request finished in 1180.9286ms 500 text/html; charset=utf-8 (791a596a)
+2018-08-15T09:20:24.0300325+07:00 0HLG2AMGJ6B15:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin   (ca22a1cb)
+2018-08-15T09:20:24.1903518+07:00 0HLG2AMGJ6B15:00000003 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T09:20:28.5493540+07:00 0HLG2AMGJ6B15:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-08-15T09:20:28.8144293+07:00 0HLG2AMGJ6B15:00000003 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" in 4749.4765ms (afa2e885)
+2018-08-15T09:20:28.8766363+07:00 0HLG2AMGJ6B15:00000003 [INF] Request finished in 4815.5654ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T09:20:30.4790770+07:00 0HLG2AMGJ6B15:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:51957/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-08-15T09:20:30.6500186+07:00 0HLG2AMGJ6B15:00000004 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" with arguments (["ERPCartonWeb.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-08-15T09:20:30.6909145+07:00 0HLG2AMGJ6B15:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T09:20:30.8528927+07:00 0HLG2AMGJ6B15:00000004 [INF] Executed DbCommand ("98"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-08-15T09:20:31.1696659+07:00 0HLG2AMGJ6B15:00000004 [INF] Executed DbCommand ("139"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-08-15T09:20:31.2960976+07:00 0HLG2AMGJ6B15:00000004 [INF] Executed DbCommand ("34"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T09:20:31.3802291+07:00 0HLG2AMGJ6B15:00000004 [INF] Executed DbCommand ("50"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-08-15T09:20:31.4607895+07:00 0HLG2AMGJ6B15:00000004 [INF] Executed DbCommand ("41"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-08-15T09:20:31.5244132+07:00 0HLG2AMGJ6B15:00000004 [INF] Executed DbCommand ("49"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T09:20:31.5437573+07:00 0HLG2AMGJ6B15:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-08-15T09:20:31.5523537+07:00 0HLG2AMGJ6B15:00000004 [INF] User logged in. (fdce0db4)
+2018-08-15T09:20:31.5733479+07:00 0HLG2AMGJ6B15:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-08-15T09:20:31.6451227+07:00 0HLG2AMGJ6B15:00000004 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" in 1103.8381ms (afa2e885)
+2018-08-15T09:20:31.6809024+07:00 0HLG2AMGJ6B15:00000004 [INF] Request finished in 1175.1324ms 200 application/json; charset=utf-8 (791a596a)
+2018-08-15T09:20:31.8485733+07:00 0HLG2AMGJ6B15:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T09:20:31.9358481+07:00 0HLG2AMGJ6B15:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T09:20:32.2432548+07:00 0HLG2AMGJ6B15:00000005 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T09:20:36.4089307+07:00 0HLG2AMGJ6B15:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T09:20:50.2323036+07:00 0HLG2AMGJ6B15:00000005 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T09:20:50.6959851+07:00 0HLG2AMGJ6B15:00000005 [INF] Executed DbCommand ("321"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-08-15T09:21:13.7727632+07:00 0HLG2AMGJ6B15:00000005 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" in 41823.8564ms (afa2e885)
+2018-08-15T09:21:13.9080449+07:00 0HLG2AMGJ6B15:00000005 [INF] Request finished in 42045.1436ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T09:29:57.9845992+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T09:29:58.5048124+07:00  [INF] Executed DbCommand ("82"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T09:29:58.5550502+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T09:29:58.6190718+07:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-08-15T09:29:58.6793733+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-08-15T09:29:58.7106679+07:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-08-15T09:29:58.8667478+07:00  [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-08-15T09:29:59.1301934+07:00  [INF] Executed DbCommand ("141"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-08-15T09:29:59.1841267+07:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-08-15T09:29:59.2451950+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-08-15T09:29:59.3696478+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T09:29:59.4107705+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T09:29:59.4391974+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T09:30:00.4007368+07:00 0HLG2ARVN06T1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/   (ca22a1cb)
+2018-08-15T09:30:00.5649757+07:00 0HLG2ARVN06T1:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T09:30:01.2437929+07:00 0HLG2ARVN06T1:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-08-15T09:30:01.4412618+07:00 0HLG2ARVN06T1:00000001 [INF] Executing action method "ERPCartonWeb.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T09:30:11.6595987+07:00 0HLG2ARVN06T1:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T09:30:13.2576128+07:00 0HLG2ARVN06T1:00000001 [INF] Executed action "ERPCartonWeb.Controllers.HomeController.Index (ERPCartonWeb)" in 11815.1596ms (afa2e885)
+2018-08-15T09:30:13.3798972+07:00 0HLG2ARVN06T1:00000001 [INF] Request finished in 13050.683ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T09:30:13.3901069+07:00 0HLG2ARVN06T4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/images/banner1.svg   (ca22a1cb)
+2018-08-15T09:30:13.4320640+07:00 0HLG2ARVN06T4:00000001 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\images\banner1.svg"' (27b0a520)
+2018-08-15T09:30:13.5025030+07:00 0HLG2ARVN06T4:00000001 [INF] Request finished in 194.2497ms 200 image/svg+xml (791a596a)
+2018-08-15T09:30:13.5439409+07:00 0HLG2ARVN06T4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/images/banner2.svg   (ca22a1cb)
+2018-08-15T09:30:13.5638729+07:00 0HLG2ARVN06T4:00000002 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\images\banner2.svg"' (27b0a520)
+2018-08-15T09:30:13.6078746+07:00 0HLG2ARVN06T4:00000002 [INF] Request finished in 72.2412ms 200 image/svg+xml (791a596a)
+2018-08-15T09:30:13.6381352+07:00 0HLG2ARVN06T4:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/images/banner3.svg   (ca22a1cb)
+2018-08-15T09:30:13.6751328+07:00 0HLG2ARVN06T4:00000003 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\images\banner3.svg"' (27b0a520)
+2018-08-15T09:30:13.7299255+07:00 0HLG2ARVN06T4:00000003 [INF] Request finished in 65.2989ms 200 image/svg+xml (791a596a)
+2018-08-15T09:30:13.8168506+07:00 0HLG2ARVN06T4:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51957/images/banner4.svg   (ca22a1cb)
+2018-08-15T09:30:13.8372369+07:00 0HLG2ARVN06T4:00000004 [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\wwwroot\images\banner4.svg"' (27b0a520)
+2018-08-15T09:30:13.9679000+07:00 0HLG2ARVN06T4:00000004 [INF] Request finished in 80.7837ms 200 image/svg+xml (791a596a)
+2018-08-15T09:30:18.1226806+07:00 0HLG2ARVN06T4:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin   (ca22a1cb)
+2018-08-15T09:30:18.1415317+07:00 0HLG2ARVN06T4:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T09:30:18.2046544+07:00 0HLG2ARVN06T4:00000005 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T09:30:18.8167554+07:00 0HLG2ARVN06T4:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-08-15T09:30:19.0333833+07:00 0HLG2ARVN06T4:00000005 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" in 807.1095ms (afa2e885)
+2018-08-15T09:30:19.0567866+07:00 0HLG2ARVN06T4:00000005 [INF] Request finished in 939.8714ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T09:30:26.5720596+07:00 0HLG2ARVN06T4:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T09:30:26.5807457+07:00 0HLG2ARVN06T4:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T09:30:26.6198174+07:00 0HLG2ARVN06T4:00000006 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T09:30:30.3903038+07:00 0HLG2ARVN06T4:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T09:30:36.5790854+07:00 0HLG2ARVN06T4:00000006 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T09:30:37.0660140+07:00 0HLG2ARVN06T4:00000006 [INF] Executed DbCommand ("197"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-08-15T09:30:40.2684876+07:00 0HLG2ARVN06T4:00000006 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" in 13592.294ms (afa2e885)
+2018-08-15T09:30:40.5654495+07:00 0HLG2ARVN06T4:00000006 [INF] Request finished in 13706.8261ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T09:32:35.5494087+07:00 0HLG2ARVN06T4:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T09:32:35.5563468+07:00 0HLG2ARVN06T4:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T09:32:35.6401582+07:00 0HLG2ARVN06T4:00000007 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T09:32:37.7116030+07:00 0HLG2ARVN06T4:00000007 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T09:32:39.4842065+07:00 0HLG2ARVN06T4:00000007 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T09:32:39.8164869+07:00 0HLG2ARVN06T4:00000007 [INF] Executed DbCommand ("308"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-08-15T09:32:41.4238360+07:00 0HLG2ARVN06T4:00000007 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" in 5519.8013ms (afa2e885)
+2018-08-15T09:32:41.4978530+07:00 0HLG2ARVN06T4:00000007 [INF] Request finished in 5905.8322ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T09:37:35.1369366+07:00 0HLG2ARVN06T4:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T09:37:35.1587365+07:00 0HLG2ARVN06T4:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T09:37:35.2100198+07:00 0HLG2ARVN06T4:00000008 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T09:37:37.3419243+07:00 0HLG2ARVN06T4:00000008 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T09:37:38.0570802+07:00 0HLG2ARVN06T4:00000008 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" in 2888.5823ms (afa2e885)
+2018-08-15T09:37:38.3184550+07:00 0HLG2ARVN06T4:00000008 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+C:\Users\Truong Ngoc Cuong\source\repos\ThienMinhTTM\ERPCartonWeb\ERPCartonWeb\Areas\Admin\Views\Shared\_Layout.cshtml(91,34): error CS4001: Cannot await 'method group'
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindPage(ActionContext context, String pageName)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.GetLayoutPage(ViewContext context, String executingFilePath, String layoutPath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-15T09:37:38.4803107+07:00 0HLG2ARVN06T4:00000008 [INF] Request finished in 3339.7662ms 500 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:14:35.7031373+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:14:36.7745434+07:00  [INF] Executed DbCommand ("113"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T13:14:36.8428488+07:00  [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T13:14:36.9015046+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-08-15T13:14:36.9592458+07:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-08-15T13:14:37.0123735+07:00  [INF] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-08-15T13:14:37.1333276+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-08-15T13:14:37.2413751+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-08-15T13:14:37.3039267+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-08-15T13:14:37.3820837+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-08-15T13:14:37.5607239+07:00  [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T13:14:37.6245134+07:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T13:14:37.7104562+07:00  [INF] Executed DbCommand ("54"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T13:14:39.2439446+07:00 0HLG2EPGK9TV1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/   (ca22a1cb)
+2018-08-15T13:14:39.4116337+07:00 0HLG2EPGK9TV1:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:14:39.8004821+07:00 0HLG2EPGK9TV1:00000001 [INF] Executed DbCommand ("243"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-08-15T13:14:40.1587733+07:00 0HLG2EPGK9TV1:00000001 [INF] Executed DbCommand ("128"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-08-15T13:14:40.3171087+07:00 0HLG2EPGK9TV1:00000001 [INF] Executed DbCommand ("51"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:14:40.7239063+07:00 0HLG2EPGK9TV1:00000001 [INF] Executed DbCommand ("337"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-08-15T13:14:40.9860210+07:00 0HLG2EPGK9TV1:00000001 [INF] Executed DbCommand ("166"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-08-15T13:14:41.0942082+07:00 0HLG2EPGK9TV1:00000001 [INF] Executed DbCommand ("88"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:14:41.1176888+07:00 0HLG2EPGK9TV1:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:14:41.6430569+07:00 0HLG2EPGK9TV1:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-08-15T13:14:41.8820175+07:00 0HLG2EPGK9TV1:00000001 [INF] Executing action method "ERPCartonWeb.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:14:52.3150106+07:00 0HLG2EPGK9TV2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin   (ca22a1cb)
+2018-08-15T13:14:52.7340855+07:00 0HLG2EPGK9TV2:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:14:52.8387918+07:00 0HLG2EPGK9TV2:00000001 [INF] Executed DbCommand ("88"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-08-15T13:14:52.9775742+07:00 0HLG2EPGK9TV2:00000001 [INF] Executed DbCommand ("114"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-08-15T13:14:53.1780726+07:00 0HLG2EPGK9TV2:00000001 [INF] Executed DbCommand ("103"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:14:53.3986930+07:00 0HLG2EPGK9TV2:00000001 [INF] Executed DbCommand ("156"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-08-15T13:14:53.5328825+07:00 0HLG2EPGK9TV2:00000001 [INF] Executed DbCommand ("88"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-08-15T13:14:53.6417083+07:00 0HLG2EPGK9TV2:00000001 [INF] Executed DbCommand ("85"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:14:53.6609413+07:00 0HLG2EPGK9TV2:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:14:53.8611435+07:00 0HLG2EPGK9TV2:00000001 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:15:00.5349237+07:00 0HLG2EPGK9TV1:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T13:15:00.5429154+07:00 0HLG2EPGK9TV2:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-08-15T13:15:01.2653458+07:00 0HLG2EPGK9TV5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/animate.css/animate.min.css   (ca22a1cb)
+2018-08-15T13:15:01.3956442+07:00 0HLG2EPGK9TV2:00000001 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" in 7278.7035ms (afa2e885)
+2018-08-15T13:15:01.4402552+07:00 0HLG2EPGK9TV3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/font-awesome/css/font-awesome.min.css   (ca22a1cb)
+2018-08-15T13:15:01.4680553+07:00 0HLG2EPGK9TV5:00000001 [INF] The file "/lib/animate.css/animate.min.css" was not modified (f1f8d725)
+2018-08-15T13:15:01.6341861+07:00 0HLG2EPGK9TV2:00000001 [INF] Request finished in 9259.3511ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:15:01.8355158+07:00 0HLG2EPGK9TV3:00000001 [INF] The file "/lib/font-awesome/css/font-awesome.min.css" was not modified (f1f8d725)
+2018-08-15T13:15:02.2558628+07:00 0HLG2EPGK9TV5:00000001 [INF] Request finished in 382.3084ms 304 text/css (791a596a)
+2018-08-15T13:15:02.3196357+07:00 0HLG2EPGK9TV3:00000001 [INF] Request finished in 745.4597ms 304 text/css (791a596a)
+2018-08-15T13:15:02.4776135+07:00 0HLG2EPGK9TV2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.brighttheme.css   (ca22a1cb)
+2018-08-15T13:15:02.4865791+07:00 0HLG2EPGK9TV3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.material.css   (ca22a1cb)
+2018-08-15T13:15:02.5149731+07:00 0HLG2EPGK9TV3:00000002 [INF] The file "/lib/pnotify/dist/pnotify.material.css" was not modified (f1f8d725)
+2018-08-15T13:15:02.5364877+07:00 0HLG2EPGK9TV5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.history.css   (ca22a1cb)
+2018-08-15T13:15:02.6813075+07:00 0HLG2EPGK9TV3:00000002 [INF] Request finished in 161.096ms 304 text/css (791a596a)
+2018-08-15T13:15:02.7294575+07:00 0HLG2EPGK9TV3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.mobile.css   (ca22a1cb)
+2018-08-15T13:15:02.7544420+07:00 0HLG2EPGK9TV5:00000002 [INF] The file "/lib/pnotify/dist/pnotify.history.css" was not modified (f1f8d725)
+2018-08-15T13:15:02.7677847+07:00 0HLG2EPGK9TV2:00000002 [INF] The file "/lib/pnotify/dist/pnotify.brighttheme.css" was not modified (f1f8d725)
+2018-08-15T13:15:02.8291765+07:00 0HLG2EPGK9TV2:00000002 [INF] Request finished in 461.0752ms 304 text/css (791a596a)
+2018-08-15T13:15:03.1524590+07:00 0HLG2EPGK9TV5:00000002 [INF] Request finished in 318.583ms 304 text/css (791a596a)
+2018-08-15T13:15:03.2813893+07:00 0HLG2EPGK9TV2:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.buttons.css   (ca22a1cb)
+2018-08-15T13:15:03.2862214+07:00 0HLG2EPGK9TV3:00000003 [INF] The file "/lib/pnotify/dist/pnotify.mobile.css" was not modified (f1f8d725)
+2018-08-15T13:15:03.3170560+07:00 0HLG2EPGK9TV3:00000003 [INF] Request finished in 595.2784ms 304 text/css (791a596a)
+2018-08-15T13:15:03.4401851+07:00 0HLG2EPGK9TV5:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.nonblock.css   (ca22a1cb)
+2018-08-15T13:15:03.4565277+07:00 0HLG2EPGK9TV2:00000003 [INF] The file "/lib/pnotify/dist/pnotify.buttons.css" was not modified (f1f8d725)
+2018-08-15T13:15:03.5734211+07:00 0HLG2EPGK9TV3:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.css   (ca22a1cb)
+2018-08-15T13:15:03.6483070+07:00 0HLG2EPGK9TV5:00000003 [INF] The file "/lib/pnotify/dist/pnotify.nonblock.css" was not modified (f1f8d725)
+2018-08-15T13:15:03.6540892+07:00 0HLG2EPGK9TV2:00000003 [INF] Request finished in 604.3317ms 304 text/css (791a596a)
+2018-08-15T13:15:03.6586190+07:00 0HLG2EPGK9TV3:00000004 [INF] The file "/lib/pnotify/dist/pnotify.css" was not modified (f1f8d725)
+2018-08-15T13:15:03.6905846+07:00 0HLG2EPGK9TV2:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin-side/css/custom.min.css   (ca22a1cb)
+2018-08-15T13:15:03.7290645+07:00 0HLG2EPGK9TV3:00000004 [INF] Request finished in 279.9319ms 304 text/css (791a596a)
+2018-08-15T13:15:03.7832565+07:00 0HLG2EPGK9TV2:00000004 [INF] The file "/admin-side/css/custom.min.css" was not modified (f1f8d725)
+2018-08-15T13:15:03.8193503+07:00 0HLG2EPGK9TV5:00000003 [INF] Request finished in 464.9494ms 304 text/css (791a596a)
+2018-08-15T13:15:03.8314676+07:00 0HLG2EPGK9TV1:00000001 [INF] Executed action "ERPCartonWeb.Controllers.HomeController.Index (ERPCartonWeb)" in 22136.6793ms (afa2e885)
+2018-08-15T13:15:03.8669276+07:00 0HLG2EPGK9TV2:00000004 [INF] Request finished in 117.9609ms 304 text/css (791a596a)
+2018-08-15T13:15:03.8710456+07:00 0HLG2EPGK9TV3:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.js   (ca22a1cb)
+2018-08-15T13:15:03.8733401+07:00 0HLG2EPGK9TV1:00000001 [INF] Request finished in 24646.69ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:15:03.8910861+07:00 0HLG2EPGK9TV5:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery/dist/jquery.min.js   (ca22a1cb)
+2018-08-15T13:15:03.9556212+07:00 0HLG2EPGK9TV3:00000005 [INF] The file "/lib/pnotify/dist/pnotify.js" was not modified (f1f8d725)
+2018-08-15T13:15:04.0039137+07:00 0HLG2EPGK9TV1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.nonblock.js   (ca22a1cb)
+2018-08-15T13:15:04.0279455+07:00 0HLG2EPGK9TV3:00000005 [INF] Request finished in 218.5128ms 304 application/javascript (791a596a)
+2018-08-15T13:15:04.0390593+07:00 0HLG2EPGK9TV2:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/pnotify/dist/pnotify.buttons.js   (ca22a1cb)
+2018-08-15T13:15:04.0421002+07:00 0HLG2EPGK9TV5:00000004 [INF] The file "/lib/jquery/dist/jquery.min.js" was not modified (f1f8d725)
+2018-08-15T13:15:04.0781435+07:00 0HLG2EPGK9TV1:00000002 [INF] The file "/lib/pnotify/dist/pnotify.nonblock.js" was not modified (f1f8d725)
+2018-08-15T13:15:04.1389316+07:00 0HLG2EPGK9TV1:00000002 [INF] Request finished in 161.5503ms 304 application/javascript (791a596a)
+2018-08-15T13:15:04.1464143+07:00 0HLG2EPGK9TV3:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/validator/validator.js   (ca22a1cb)
+2018-08-15T13:15:04.1602819+07:00 0HLG2EPGK9TV5:00000004 [INF] Request finished in 223.7026ms 304 application/javascript (791a596a)
+2018-08-15T13:15:04.1986986+07:00 0HLG2EPGK9TV2:00000005 [INF] The file "/lib/pnotify/dist/pnotify.buttons.js" was not modified (f1f8d725)
+2018-08-15T13:15:04.2785672+07:00 0HLG2EPGK9TV1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/app/controllers/login/index.js   (ca22a1cb)
+2018-08-15T13:15:04.2858657+07:00 0HLG2EPGK9TV3:00000006 [INF] The file "/lib/validator/validator.js" was not modified (f1f8d725)
+2018-08-15T13:15:04.3087004+07:00 0HLG2EPGK9TV5:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:51957/app/shared/cuong.js   (ca22a1cb)
+2018-08-15T13:15:04.3304404+07:00 0HLG2EPGK9TV2:00000005 [INF] Request finished in 285.3447ms 304 application/javascript (791a596a)
+2018-08-15T13:15:04.3846411+07:00 0HLG2EPGK9TV1:00000003 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2018-08-15T13:15:04.4876919+07:00 0HLG2EPGK9TV3:00000006 [INF] Request finished in 177.6598ms 304 application/javascript (791a596a)
+2018-08-15T13:15:04.5082128+07:00 0HLG2EPGK9TV1:00000003 [INF] Request finished in 215.9414ms 304 application/javascript (791a596a)
+2018-08-15T13:15:04.5525342+07:00 0HLG2EPGK9TV4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap/dist/css/bootstrap.min.css   (ca22a1cb)
+2018-08-15T13:15:04.5903718+07:00 0HLG2EPGK9TV5:00000005 [INF] The file "/app/shared/cuong.js" was not modified (f1f8d725)
+2018-08-15T13:15:04.6156706+07:00 0HLG2EPGK9TV5:00000005 [INF] Request finished in 419.2888ms 304 application/javascript (791a596a)
+2018-08-15T13:15:04.6287793+07:00 0HLG2EPGK9TV4:00000001 [INF] The file "/lib/bootstrap/dist/css/bootstrap.min.css" was not modified (f1f8d725)
+2018-08-15T13:15:04.6340613+07:00 0HLG2EPGK9TV3:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-08-15T13:15:04.7058023+07:00 0HLG2EPGK9TV3:00000007 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2018-08-15T13:15:04.7259422+07:00 0HLG2EPGK9TV3:00000007 [INF] Request finished in 142.6701ms 304 text/css (791a596a)
+2018-08-15T13:15:04.7902592+07:00 0HLG2EPGK9TV5:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-08-15T13:15:04.8505197+07:00 0HLG2EPGK9TV6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-08-15T13:15:04.8587064+07:00 0HLG2EPGK9TV4:00000001 [INF] Request finished in 120.4258ms 304 text/css (791a596a)
+2018-08-15T13:15:05.1137016+07:00 0HLG2EPGK9TV6:00000001 [INF] The file "/lib/nprogress/nprogress.css" was not modified (f1f8d725)
+2018-08-15T13:15:05.1881856+07:00 0HLG2EPGK9TV6:00000001 [INF] Request finished in 400.6706ms 304 text/css (791a596a)
+2018-08-15T13:15:05.2014729+07:00 0HLG2EPGK9TV5:00000006 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2018-08-15T13:15:05.3057237+07:00 0HLG2EPGK9TV5:00000006 [INF] Request finished in 443.8846ms 304 application/javascript (791a596a)
+2018-08-15T13:15:05.3687194+07:00 0HLG2EPGK9TV5:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3   (ca22a1cb)
+2018-08-15T13:15:05.3887769+07:00 0HLG2EPGK9TV6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-08-15T13:15:05.3954674+07:00 0HLG2EPGK9TV5:00000007 [INF] The file "/lib/font-awesome/fonts/fontawesome-webfont.woff2" was not modified (f1f8d725)
+2018-08-15T13:15:05.4214736+07:00 0HLG2EPGK9TV6:00000002 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-08-15T13:15:05.6325988+07:00 0HLG2EPGK9TV6:00000002 [INF] Request finished in 194.8133ms 304 application/javascript (791a596a)
+2018-08-15T13:15:05.6415766+07:00 0HLG2EPGK9TV5:00000007 [INF] Request finished in 79.6797ms 304 font/woff2 (791a596a)
+2018-08-15T13:15:07.4489578+07:00 0HLG2EPGK9TV6:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-08-15T13:15:07.4846987+07:00 0HLG2EPGK9TV6:00000003 [INF] The file "/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" was not modified (f1f8d725)
+2018-08-15T13:15:07.5205277+07:00 0HLG2EPGK9TV6:00000003 [INF] Request finished in 51.7264ms 304 font/woff2 (791a596a)
+2018-08-15T13:15:17.4764438+07:00 0HLG2EPGK9TV6:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:51957/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-08-15T13:15:17.4984389+07:00 0HLG2EPGK9TV6:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:15:17.7373199+07:00 0HLG2EPGK9TV6:00000004 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" with arguments (["ERPCartonWeb.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:15:17.7700105+07:00 0HLG2EPGK9TV6:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:15:18.0667764+07:00 0HLG2EPGK9TV6:00000004 [INF] Executed DbCommand ("230"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-08-15T13:15:18.3126455+07:00 0HLG2EPGK9TV6:00000004 [INF] Executed DbCommand ("115"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-08-15T13:15:18.3990044+07:00 0HLG2EPGK9TV6:00000004 [INF] Executed DbCommand ("73"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:15:18.5134868+07:00 0HLG2EPGK9TV6:00000004 [INF] Executed DbCommand ("102"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-08-15T13:15:18.7183050+07:00 0HLG2EPGK9TV6:00000004 [INF] Executed DbCommand ("144"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-08-15T13:15:19.2869022+07:00 0HLG2EPGK9TV6:00000004 [INF] Executed DbCommand ("433"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:15:19.3050231+07:00 0HLG2EPGK9TV6:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-08-15T13:15:19.3361194+07:00 0HLG2EPGK9TV6:00000004 [INF] User logged in. (fdce0db4)
+2018-08-15T13:15:19.3669835+07:00 0HLG2EPGK9TV6:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-08-15T13:15:19.5277633+07:00 0HLG2EPGK9TV6:00000004 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" in 1931.6574ms (afa2e885)
+2018-08-15T13:15:19.7425514+07:00 0HLG2EPGK9TV6:00000004 [INF] Request finished in 2070.2623ms 200 application/json; charset=utf-8 (791a596a)
+2018-08-15T13:15:19.7598070+07:00 0HLG2EPGK9TV6:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T13:15:19.8110938+07:00 0HLG2EPGK9TV6:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:15:20.0709175+07:00 0HLG2EPGK9TV6:00000005 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:15:28.9307390+07:00 0HLG2EPGK9TV6:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T13:15:35.6013115+07:00 0HLG2EPGK9TV6:00000005 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:15:36.2604742+07:00 0HLG2EPGK9TV6:00000005 [INF] Executed DbCommand ("420"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-08-15T13:15:37.7415657+07:00 0HLG2EPGK9TV6:00000005 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" in 17824.4135ms (afa2e885)
+2018-08-15T13:15:37.7736564+07:00 0HLG2EPGK9TV6:00000005 [INF] Request finished in 17993.9747ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:15:38.2217545+07:00 0HLG2EPGK9TV6:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/iCheck/skins/flat/green.css   (ca22a1cb)
+2018-08-15T13:15:38.2412712+07:00 0HLG2EPGK9TV6:00000006 [INF] The file "/lib/iCheck/skins/flat/green.css" was not modified (f1f8d725)
+2018-08-15T13:15:38.2518332+07:00 0HLG2EPGK9TV6:00000006 [INF] Request finished in 34.0191ms 304 text/css (791a596a)
+2018-08-15T13:15:38.3076575+07:00 0HLG2EPGK9TV6:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css   (ca22a1cb)
+2018-08-15T13:15:38.3248713+07:00 0HLG2EPGK9TV6:00000007 [INF] The file "/lib/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" was not modified (f1f8d725)
+2018-08-15T13:15:38.3490988+07:00 0HLG2EPGK9TV6:00000007 [INF] Request finished in 31.1273ms 304 text/css (791a596a)
+2018-08-15T13:15:38.4154456+07:00 0HLG2EPGK9TV6:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jqvmap/dist/jqvmap.min.css   (ca22a1cb)
+2018-08-15T13:15:38.4313734+07:00 0HLG2EPGK9TV6:00000008 [INF] The file "/lib/jqvmap/dist/jqvmap.min.css" was not modified (f1f8d725)
+2018-08-15T13:15:38.4481996+07:00 0HLG2EPGK9TV6:00000008 [INF] Request finished in 72.9546ms 304 text/css (791a596a)
+2018-08-15T13:15:38.4873437+07:00 0HLG2EPGK9TV6:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-08-15T13:15:38.5192997+07:00 0HLG2EPGK9TV6:00000009 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2018-08-15T13:15:38.5416896+07:00 0HLG2EPGK9TV6:00000009 [INF] Request finished in 52.9772ms 304 text/css (791a596a)
+2018-08-15T13:15:38.9153506+07:00 0HLG2EPGK9TV6:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin-side/images/img.jpg   (ca22a1cb)
+2018-08-15T13:15:38.9298068+07:00 0HLG2EPGK9TV6:0000000A [INF] The file "/admin-side/images/img.jpg" was not modified (f1f8d725)
+2018-08-15T13:15:38.9493099+07:00 0HLG2EPGK9TV6:0000000A [INF] Request finished in 29.4047ms 304 image/jpeg (791a596a)
+2018-08-15T13:15:38.9893005+07:00 0HLG2EPGK9TV6:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap/dist/js/bootstrap.min.js   (ca22a1cb)
+2018-08-15T13:15:39.0025120+07:00 0HLG2EPGK9TV6:0000000B [INF] The file "/lib/bootstrap/dist/js/bootstrap.min.js" was not modified (f1f8d725)
+2018-08-15T13:15:39.0149597+07:00 0HLG2EPGK9TV6:0000000B [INF] Request finished in 22.4142ms 304 application/javascript (791a596a)
+2018-08-15T13:15:39.2747587+07:00 0HLG2EPGK9TV6:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-08-15T13:15:39.3006628+07:00 0HLG2EPGK9TV6:0000000C [INF] The file "/lib/fastclick/lib/fastclick.js" was not modified (f1f8d725)
+2018-08-15T13:15:39.3290853+07:00 0HLG2EPGK9TV6:0000000C [INF] Request finished in 47.1453ms 304 application/javascript (791a596a)
+2018-08-15T13:15:39.3614857+07:00 0HLG2EPGK9TV6:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/nprogress/nprogress.js   (ca22a1cb)
+2018-08-15T13:15:39.4071539+07:00 0HLG2EPGK9TV6:0000000D [INF] The file "/lib/nprogress/nprogress.js" was not modified (f1f8d725)
+2018-08-15T13:15:39.4210355+07:00 0HLG2EPGK9TV6:0000000D [INF] Request finished in 68.8787ms 304 application/javascript (791a596a)
+2018-08-15T13:15:39.4400705+07:00 0HLG2EPGK9TV6:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/Chart.js/dist/Chart.min.js   (ca22a1cb)
+2018-08-15T13:15:39.4546254+07:00 0HLG2EPGK9TV6:0000000E [INF] The file "/lib/Chart.js/dist/Chart.min.js" was not modified (f1f8d725)
+2018-08-15T13:15:39.4714008+07:00 0HLG2EPGK9TV6:0000000E [INF] Request finished in 27.7048ms 304 application/javascript (791a596a)
+2018-08-15T13:15:39.6233415+07:00 0HLG2EPGK9TV6:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/gauge.js/dist/gauge.min.js   (ca22a1cb)
+2018-08-15T13:15:39.7123631+07:00 0HLG2EPGK9TV6:0000000F [INF] The file "/lib/gauge.js/dist/gauge.min.js" was not modified (f1f8d725)
+2018-08-15T13:15:40.0388298+07:00 0HLG2EPGK9TV6:0000000F [INF] Request finished in 208.6433ms 304 application/javascript (791a596a)
+2018-08-15T13:15:40.1131434+07:00 0HLG2EPGK9TV6:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap-progressbar/bootstrap-progressbar.min.js   (ca22a1cb)
+2018-08-15T13:15:40.1239356+07:00 0HLG2EPGK9TV6:00000010 [INF] The file "/lib/bootstrap-progressbar/bootstrap-progressbar.min.js" was not modified (f1f8d725)
+2018-08-15T13:15:40.1470803+07:00 0HLG2EPGK9TV6:00000010 [INF] Request finished in 67.7838ms 304 application/javascript (791a596a)
+2018-08-15T13:15:40.2095435+07:00 0HLG2EPGK9TV6:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/iCheck/icheck.min.js   (ca22a1cb)
+2018-08-15T13:15:40.2361319+07:00 0HLG2EPGK9TV6:00000011 [INF] The file "/lib/iCheck/icheck.min.js" was not modified (f1f8d725)
+2018-08-15T13:15:40.2863579+07:00 0HLG2EPGK9TV6:00000011 [INF] Request finished in 84.2232ms 304 application/javascript (791a596a)
+2018-08-15T13:15:40.3090361+07:00 0HLG2EPGK9TV6:00000012 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/skycons/skycons.js   (ca22a1cb)
+2018-08-15T13:15:40.3358615+07:00 0HLG2EPGK9TV6:00000012 [INF] The file "/lib/skycons/skycons.js" was not modified (f1f8d725)
+2018-08-15T13:15:40.3544357+07:00 0HLG2EPGK9TV6:00000012 [INF] Request finished in 42.1827ms 304 application/javascript (791a596a)
+2018-08-15T13:15:40.3963450+07:00 0HLG2EPGK9TV6:00000013 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/Flot/jquery.flot.js   (ca22a1cb)
+2018-08-15T13:15:40.4619083+07:00 0HLG2EPGK9TV6:00000013 [INF] The file "/lib/Flot/jquery.flot.js" was not modified (f1f8d725)
+2018-08-15T13:15:40.4793732+07:00 0HLG2EPGK9TV6:00000013 [INF] Request finished in 101.9907ms 304 application/javascript (791a596a)
+2018-08-15T13:15:40.5913309+07:00 0HLG2EPGK9TV6:00000014 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/Flot/jquery.flot.pie.js   (ca22a1cb)
+2018-08-15T13:15:40.6253205+07:00 0HLG2EPGK9TV6:00000014 [INF] The file "/lib/Flot/jquery.flot.pie.js" was not modified (f1f8d725)
+2018-08-15T13:15:40.6834412+07:00 0HLG2EPGK9TV6:00000014 [INF] Request finished in 48.3635ms 304 application/javascript (791a596a)
+2018-08-15T13:15:40.7487372+07:00 0HLG2EPGK9TV6:00000015 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/Flot/jquery.flot.time.js   (ca22a1cb)
+2018-08-15T13:15:40.7621428+07:00 0HLG2EPGK9TV6:00000015 [INF] The file "/lib/Flot/jquery.flot.time.js" was not modified (f1f8d725)
+2018-08-15T13:15:40.7756065+07:00 0HLG2EPGK9TV6:00000015 [INF] Request finished in 22.4187ms 304 application/javascript (791a596a)
+2018-08-15T13:15:40.8004290+07:00 0HLG2EPGK9TV6:00000016 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/Flot/jquery.flot.stack.js   (ca22a1cb)
+2018-08-15T13:15:40.8190734+07:00 0HLG2EPGK9TV6:00000016 [INF] The file "/lib/Flot/jquery.flot.stack.js" was not modified (f1f8d725)
+2018-08-15T13:15:40.8620719+07:00 0HLG2EPGK9TV6:00000016 [INF] Request finished in 27.5402ms 304 application/javascript (791a596a)
+2018-08-15T13:15:40.8916230+07:00 0HLG2EPGK9TV6:00000017 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/Flot/jquery.flot.resize.js   (ca22a1cb)
+2018-08-15T13:15:40.9026265+07:00 0HLG2EPGK9TV6:00000017 [INF] The file "/lib/Flot/jquery.flot.resize.js" was not modified (f1f8d725)
+2018-08-15T13:15:40.9149001+07:00 0HLG2EPGK9TV6:00000017 [INF] Request finished in 21.9105ms 304 application/javascript (791a596a)
+2018-08-15T13:15:40.9469259+07:00 0HLG2EPGK9TV6:00000018 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/flot.orderbars/js/jquery.flot.orderBars.js   (ca22a1cb)
+2018-08-15T13:15:40.9584675+07:00 0HLG2EPGK9TV6:00000018 [INF] The file "/lib/flot.orderbars/js/jquery.flot.orderBars.js" was not modified (f1f8d725)
+2018-08-15T13:15:40.9773167+07:00 0HLG2EPGK9TV6:00000018 [INF] Request finished in 21.9875ms 304 application/javascript (791a596a)
+2018-08-15T13:15:41.0129211+07:00 0HLG2EPGK9TV6:00000019 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/flot-spline/js/jquery.flot.spline.min.js   (ca22a1cb)
+2018-08-15T13:15:41.0286688+07:00 0HLG2EPGK9TV6:00000019 [INF] The file "/lib/flot-spline/js/jquery.flot.spline.min.js" was not modified (f1f8d725)
+2018-08-15T13:15:41.0578949+07:00 0HLG2EPGK9TV6:00000019 [INF] Request finished in 26.5386ms 304 application/javascript (791a596a)
+2018-08-15T13:15:41.0843117+07:00 0HLG2EPGK9TV6:0000001A [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/flot.curvedlines/curvedLines.js   (ca22a1cb)
+2018-08-15T13:15:41.1167972+07:00 0HLG2EPGK9TV6:0000001A [INF] The file "/lib/flot.curvedlines/curvedLines.js" was not modified (f1f8d725)
+2018-08-15T13:15:41.1532702+07:00 0HLG2EPGK9TV6:0000001A [INF] Request finished in 46.5123ms 304 application/javascript (791a596a)
+2018-08-15T13:15:41.2008551+07:00 0HLG2EPGK9TV6:0000001B [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/DateJS/build/date.js   (ca22a1cb)
+2018-08-15T13:15:41.2127604+07:00 0HLG2EPGK9TV6:0000001B [INF] The file "/lib/DateJS/build/date.js" was not modified (f1f8d725)
+2018-08-15T13:15:41.2265552+07:00 0HLG2EPGK9TV6:0000001B [INF] Request finished in 36.3876ms 304 application/javascript (791a596a)
+2018-08-15T13:15:41.2853358+07:00 0HLG2EPGK9TV6:0000001C [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jqvmap/dist/jquery.vmap.js   (ca22a1cb)
+2018-08-15T13:15:41.3553054+07:00 0HLG2EPGK9TV6:0000001C [INF] The file "/lib/jqvmap/dist/jquery.vmap.js" was not modified (f1f8d725)
+2018-08-15T13:15:41.3845197+07:00 0HLG2EPGK9TV6:0000001C [INF] Request finished in 131.6211ms 304 application/javascript (791a596a)
+2018-08-15T13:15:41.4012613+07:00 0HLG2EPGK9TV6:0000001D [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jqvmap/dist/maps/jquery.vmap.world.js   (ca22a1cb)
+2018-08-15T13:15:41.4254759+07:00 0HLG2EPGK9TV6:0000001D [INF] The file "/lib/jqvmap/dist/maps/jquery.vmap.world.js" was not modified (f1f8d725)
+2018-08-15T13:15:41.4594159+07:00 0HLG2EPGK9TV6:0000001D [INF] Request finished in 36.9918ms 304 application/javascript (791a596a)
+2018-08-15T13:15:41.4825199+07:00 0HLG2EPGK9TV6:0000001E [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jqvmap/examples/js/jquery.vmap.sampledata.js   (ca22a1cb)
+2018-08-15T13:15:41.5316753+07:00 0HLG2EPGK9TV6:0000001E [INF] The file "/lib/jqvmap/examples/js/jquery.vmap.sampledata.js" was not modified (f1f8d725)
+2018-08-15T13:15:41.6149588+07:00 0HLG2EPGK9TV6:0000001E [INF] Request finished in 65.6213ms 304 application/javascript (791a596a)
+2018-08-15T13:15:41.6481629+07:00 0HLG2EPGK9TV6:0000001F [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/moment/min/moment.min.js   (ca22a1cb)
+2018-08-15T13:15:41.6706685+07:00 0HLG2EPGK9TV6:0000001F [INF] The file "/lib/moment/min/moment.min.js" was not modified (f1f8d725)
+2018-08-15T13:15:42.0005535+07:00 0HLG2EPGK9TV6:0000001F [INF] Request finished in 50.2943ms 304 application/javascript (791a596a)
+2018-08-15T13:15:42.1779341+07:00 0HLG2EPGK9TV6:00000020 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-08-15T13:15:42.2329260+07:00 0HLG2EPGK9TV6:00000020 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.js" was not modified (f1f8d725)
+2018-08-15T13:15:42.2658624+07:00 0HLG2EPGK9TV6:00000020 [INF] Request finished in 123.6434ms 304 application/javascript (791a596a)
+2018-08-15T13:15:42.2885554+07:00 0HLG2EPGK9TV6:00000021 [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin-side/js/custom.js   (ca22a1cb)
+2018-08-15T13:15:42.3048203+07:00 0HLG2EPGK9TV6:00000021 [INF] The file "/admin-side/js/custom.js" was not modified (f1f8d725)
+2018-08-15T13:15:42.3205125+07:00 0HLG2EPGK9TV6:00000021 [INF] Request finished in 33.2879ms 304 application/javascript (791a596a)
+2018-08-15T13:15:48.1432904+07:00 0HLG2EPGK9TV6:00000022 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/iCheck/skins/flat/green@2x.png   (ca22a1cb)
+2018-08-15T13:15:48.1578718+07:00 0HLG2EPGK9TV6:00000022 [INF] The file "/lib/iCheck/skins/flat/green@2x.png" was not modified (f1f8d725)
+2018-08-15T13:15:48.1964613+07:00 0HLG2EPGK9TV6:00000022 [INF] Request finished in 28.8965ms 304 image/png (791a596a)
+2018-08-15T13:21:06.3190083+07:00 0HLG2EPGK9TV8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T13:21:06.3344992+07:00 0HLG2EPGK9TV8:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:21:06.3980543+07:00 0HLG2EPGK9TV8:00000001 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:21:06.4081165+07:00 0HLG2EPGK9TV8:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T13:21:11.8619912+07:00 0HLG2EPGK9TV8:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:21:12.5596070+07:00 0HLG2EPGK9TV8:00000001 [INF] Executed DbCommand ("75"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-08-15T13:21:13.2495804+07:00 0HLG2EPGK9TV8:00000001 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" in 6752.181ms (afa2e885)
+2018-08-15T13:21:13.3325699+07:00 0HLG2EPGK9TV8:00000001 [INF] Request finished in 7005.2106ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:21:23.3946292+07:00 0HLG2EPGK9TV8:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:51957/Account/Logout?area=Admin application/x-www-form-urlencoded 225 (ca22a1cb)
+2018-08-15T13:21:23.4108365+07:00 0HLG2EPGK9TV8:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:21:23.4308436+07:00 0HLG2EPGK9TV8:00000002 [ERR] Request matched multiple actions resulting in ambiguity. Matching actions: "ERPCartonWeb.Controllers.AccountController.Logout (ERPCartonWeb)
+ERPCartonWeb.Areas.Admin.Controllers.AccountController.Logout (ERPCartonWeb)" (ab9a4111)
+2018-08-15T13:21:23.6191295+07:00 0HLG2EPGK9TV8:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+ERPCartonWeb.Controllers.AccountController.Logout (ERPCartonWeb)
+ERPCartonWeb.Areas.Admin.Controllers.AccountController.Logout (ERPCartonWeb)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-15T13:21:24.2146627+07:00 0HLG2EPGK9TV8:00000002 [INF] Request finished in 698.1422ms 500 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:21:28.6602870+07:00 0HLG2EPGK9TV8:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T13:21:28.7000857+07:00 0HLG2EPGK9TV8:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:21:28.7556078+07:00 0HLG2EPGK9TV8:00000003 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:21:28.7640479+07:00 0HLG2EPGK9TV8:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T13:21:30.8554538+07:00 0HLG2EPGK9TV8:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:21:30.9686172+07:00 0HLG2EPGK9TV8:00000003 [INF] Executed DbCommand ("74"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-08-15T13:21:31.2842697+07:00 0HLG2EPGK9TV8:00000003 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" in 2280.9264ms (afa2e885)
+2018-08-15T13:21:31.3090126+07:00 0HLG2EPGK9TV8:00000003 [INF] Request finished in 2640.9204ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:21:36.7756664+07:00 0HLG2EPGK9TV8:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Manage/Index   (ca22a1cb)
+2018-08-15T13:21:36.8852177+07:00 0HLG2EPGK9TV8:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:21:36.9332297+07:00 0HLG2EPGK9TV8:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-08-15T13:21:37.0997059+07:00 0HLG2EPGK9TV8:00000004 [INF] Executing action method "ERPCartonWeb.Controllers.ManageController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:21:37.1277119+07:00 0HLG2EPGK9TV8:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:21:37.3032588+07:00 0HLG2EPGK9TV8:00000004 [INF] Executed DbCommand ("119"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-08-15T13:21:39.2068178+07:00 0HLG2EPGK9TV8:00000004 [INF] Executing ViewResult, running view at path "/Views/Manage/Index.cshtml". (9707eebe)
+2018-08-15T13:21:42.9572004+07:00 0HLG2EPGK9TV8:00000004 [INF] Executed action "ERPCartonWeb.Controllers.ManageController.Index (ERPCartonWeb)" in 5902.3252ms (afa2e885)
+2018-08-15T13:21:43.0733868+07:00 0HLG2EPGK9TV8:00000004 [INF] Request finished in 6203.8294ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:21:43.1455033+07:00 0HLG2EPGK9TVG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-08-15T13:21:43.2240650+07:00 0HLG2EPGK9TVG:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:21:43.2375609+07:00 0HLG2EPGK9TVF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-08-15T13:21:43.2456604+07:00 0HLG2EPGK9TVF:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:21:43.2549443+07:00 0HLG2EPGK9TVG:00000001 [INF] Request finished in 152.6871ms 404  (791a596a)
+2018-08-15T13:21:43.2810214+07:00 0HLG2EPGK9TVF:00000001 [INF] Request finished in 176.0343ms 404  (791a596a)
+2018-08-15T13:21:43.6522024+07:00 0HLG2EPGK9TVF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-08-15T13:21:43.7193312+07:00 0HLG2EPGK9TVF:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:21:43.7664842+07:00 0HLG2EPGK9TVF:00000002 [INF] Request finished in 88.5665ms 404  (791a596a)
+2018-08-15T13:21:43.8206371+07:00 0HLG2EPGK9TVF:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-08-15T13:21:43.8778267+07:00 0HLG2EPGK9TVF:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:21:44.0944096+07:00 0HLG2EPGK9TVF:00000003 [INF] Request finished in 83.5462ms 404  (791a596a)
+2018-08-15T13:22:56.8814206+07:00 0HLG2EPGK9TVF:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin   (ca22a1cb)
+2018-08-15T13:22:56.8971011+07:00 0HLG2EPGK9TVF:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:22:56.9455203+07:00 0HLG2EPGK9TVF:00000004 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:22:56.9518490+07:00 0HLG2EPGK9TVF:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-08-15T13:22:56.9680885+07:00 0HLG2EPGK9TVF:00000004 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" in 56.5346ms (afa2e885)
+2018-08-15T13:22:57.0322573+07:00 0HLG2EPGK9TVF:00000004 [INF] Request finished in 113.6014ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:22:58.9094494+07:00 0HLG2EPGK9TVF:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:51957/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-08-15T13:22:58.9158137+07:00 0HLG2EPGK9TVF:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:22:58.9609516+07:00 0HLG2EPGK9TVF:00000005 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" with arguments (["ERPCartonWeb.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:22:58.9780805+07:00 0HLG2EPGK9TVF:00000005 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:22:59.0273470+07:00 0HLG2EPGK9TVF:00000005 [INF] Executed DbCommand ("42"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-08-15T13:22:59.1003237+07:00 0HLG2EPGK9TVF:00000005 [INF] Executed DbCommand ("51"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-08-15T13:22:59.1588173+07:00 0HLG2EPGK9TVF:00000005 [INF] Executed DbCommand ("48"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:22:59.2258839+07:00 0HLG2EPGK9TVF:00000005 [INF] Executed DbCommand ("59"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-08-15T13:22:59.2946190+07:00 0HLG2EPGK9TVF:00000005 [INF] Executed DbCommand ("61"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-08-15T13:22:59.3482678+07:00 0HLG2EPGK9TVF:00000005 [INF] Executed DbCommand ("46"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:22:59.3555738+07:00 0HLG2EPGK9TVF:00000005 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-08-15T13:22:59.3615278+07:00 0HLG2EPGK9TVF:00000005 [INF] User logged in. (fdce0db4)
+2018-08-15T13:22:59.3744401+07:00 0HLG2EPGK9TVF:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-08-15T13:22:59.3873774+07:00 0HLG2EPGK9TVF:00000005 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" in 458.6089ms (afa2e885)
+2018-08-15T13:22:59.5562730+07:00 0HLG2EPGK9TVF:00000005 [INF] Request finished in 484.5442ms 200 application/json; charset=utf-8 (791a596a)
+2018-08-15T13:22:59.5711436+07:00 0HLG2EPGK9TVF:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T13:22:59.5794165+07:00 0HLG2EPGK9TVF:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:22:59.6987155+07:00 0HLG2EPGK9TVF:00000006 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:22:59.7071563+07:00 0HLG2EPGK9TVF:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T13:23:01.8916670+07:00 0HLG2EPGK9TVF:00000006 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:23:02.2126459+07:00 0HLG2EPGK9TVF:00000006 [INF] Executed DbCommand ("299"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-08-15T13:23:02.9172121+07:00 0HLG2EPGK9TVF:00000006 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" in 3180.8368ms (afa2e885)
+2018-08-15T13:23:02.9434382+07:00 0HLG2EPGK9TVF:00000006 [INF] Request finished in 3356.8438ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:23:10.2159655+07:00 0HLG2EPGK9TVF:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Manage/Index   (ca22a1cb)
+2018-08-15T13:23:10.2333466+07:00 0HLG2EPGK9TVF:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:23:10.2457089+07:00 0HLG2EPGK9TVF:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-08-15T13:23:10.2787580+07:00 0HLG2EPGK9TVF:00000007 [INF] Executing action method "ERPCartonWeb.Controllers.ManageController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:23:10.2868855+07:00 0HLG2EPGK9TVF:00000007 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:23:10.3590597+07:00 0HLG2EPGK9TVF:00000007 [INF] Executed DbCommand ("59"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-08-15T13:23:10.3718604+07:00 0HLG2EPGK9TVF:00000007 [INF] Executing ViewResult, running view at path "/Views/Manage/Index.cshtml". (9707eebe)
+2018-08-15T13:23:10.4061765+07:00 0HLG2EPGK9TVF:00000007 [INF] Executed action "ERPCartonWeb.Controllers.ManageController.Index (ERPCartonWeb)" in 148.8679ms (afa2e885)
+2018-08-15T13:23:10.4749526+07:00 0HLG2EPGK9TVF:00000007 [INF] Request finished in 208.4469ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:23:10.4998043+07:00 0HLG2EPGK9TVG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-08-15T13:23:10.6120494+07:00 0HLG2EPGK9TVG:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:23:10.6385786+07:00 0HLG2EPGK9TVF:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-08-15T13:23:10.6635699+07:00 0HLG2EPGK9TVG:00000002 [INF] Request finished in 138.4463ms 404  (791a596a)
+2018-08-15T13:23:10.6707720+07:00 0HLG2EPGK9TVF:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:23:10.6920633+07:00 0HLG2EPGK9TVF:00000008 [INF] Request finished in 170.6143ms 404  (791a596a)
+2018-08-15T13:23:10.8304630+07:00 0HLG2EPGK9TVF:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-08-15T13:23:10.8534380+07:00 0HLG2EPGK9TVF:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:23:10.8857950+07:00 0HLG2EPGK9TVF:00000009 [INF] Request finished in 36.3273ms 404  (791a596a)
+2018-08-15T13:23:10.8992120+07:00 0HLG2EPGK9TVF:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:51957/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-08-15T13:23:10.9364227+07:00 0HLG2EPGK9TVF:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:23:11.0023671+07:00 0HLG2EPGK9TVF:0000000A [INF] Request finished in 46.0678ms 404  (791a596a)
+2018-08-15T13:23:18.6598915+07:00 0HLG2EPGK9TVF:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T13:23:18.6707899+07:00 0HLG2EPGK9TVF:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:23:18.7060633+07:00 0HLG2EPGK9TVF:0000000B [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:23:18.7118796+07:00 0HLG2EPGK9TVF:0000000B [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T13:24:55.1554070+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:24:55.6322886+07:00  [INF] Executed DbCommand ("72"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T13:24:55.6735911+07:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T13:24:55.7142382+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-08-15T13:24:55.7612603+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-08-15T13:24:55.7969831+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-08-15T13:24:55.9011022+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-08-15T13:24:55.9780505+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-08-15T13:24:56.0295043+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-08-15T13:24:56.0834940+07:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-08-15T13:24:56.2084463+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T13:24:56.2704582+07:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T13:24:56.3038623+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T13:24:57.6844329+07:00 0HLG2EV8TU6TS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/   (ca22a1cb)
+2018-08-15T13:24:57.8140156+07:00 0HLG2EV8TU6TS:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:24:58.3195894+07:00 0HLG2EV8TU6TS:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-08-15T13:24:59.0698939+07:00 0HLG2EV8TU6TS:00000001 [INF] Executing action method "ERPCartonWeb.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:25:06.0275484+07:00 0HLG2EV8TU6TS:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T13:25:07.6840514+07:00 0HLG2EV8TU6TS:00000001 [INF] Executed action "ERPCartonWeb.Controllers.HomeController.Index (ERPCartonWeb)" in 9343.7389ms (afa2e885)
+2018-08-15T13:25:07.7032245+07:00 0HLG2EV8TU6TS:00000001 [INF] Request finished in 10072.5708ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:25:30.8173652+07:00 0HLG2EV8TU6TS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin   (ca22a1cb)
+2018-08-15T13:25:30.8521998+07:00 0HLG2EV8TU6TS:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:25:30.9309219+07:00 0HLG2EV8TU6TS:00000002 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:25:31.4810931+07:00 0HLG2EV8TU6TS:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-08-15T13:25:31.6663650+07:00 0HLG2EV8TU6TS:00000002 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" in 701.4209ms (afa2e885)
+2018-08-15T13:25:31.7208335+07:00 0HLG2EV8TU6TS:00000002 [INF] Request finished in 887.2978ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:25:33.6725644+07:00 0HLG2EV8TU6TS:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:51957/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-08-15T13:25:33.6835492+07:00 0HLG2EV8TU6TS:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:25:33.8479347+07:00 0HLG2EV8TU6TS:00000003 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" with arguments (["ERPCartonWeb.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:25:33.8878107+07:00 0HLG2EV8TU6TS:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:25:34.0575247+07:00 0HLG2EV8TU6TS:00000003 [INF] Executed DbCommand ("112"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-08-15T13:25:34.4122531+07:00 0HLG2EV8TU6TS:00000003 [INF] Executed DbCommand ("104"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-08-15T13:25:34.5522061+07:00 0HLG2EV8TU6TS:00000003 [INF] Executed DbCommand ("41"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:25:34.7805107+07:00 0HLG2EV8TU6TS:00000003 [INF] Executed DbCommand ("189"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-08-15T13:25:34.9248347+07:00 0HLG2EV8TU6TS:00000003 [INF] Executed DbCommand ("81"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-08-15T13:25:35.0062750+07:00 0HLG2EV8TU6TS:00000003 [INF] Executed DbCommand ("66"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:25:35.0544113+07:00 0HLG2EV8TU6TS:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-08-15T13:25:35.0712853+07:00 0HLG2EV8TU6TS:00000003 [INF] User logged in. (fdce0db4)
+2018-08-15T13:25:35.0933438+07:00 0HLG2EV8TU6TS:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-08-15T13:25:35.1635201+07:00 0HLG2EV8TU6TS:00000003 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" in 1423.2893ms (afa2e885)
+2018-08-15T13:25:35.2073973+07:00 0HLG2EV8TU6TS:00000003 [INF] Request finished in 1499.0596ms 200 application/json; charset=utf-8 (791a596a)
+2018-08-15T13:25:35.3394687+07:00 0HLG2EV8TU6TS:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T13:25:35.3676976+07:00 0HLG2EV8TU6TS:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:25:35.4030768+07:00 0HLG2EV8TU6TS:00000004 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:25:35.5525346+07:00 0HLG2EV8TU6U0:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:51957/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-08-15T13:25:35.5727335+07:00 0HLG2EV8TU6U0:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:25:35.6202877+07:00 0HLG2EV8TU6U0:00000001 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" with arguments (["ERPCartonWeb.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:25:35.6377826+07:00 0HLG2EV8TU6U0:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:25:35.7164439+07:00 0HLG2EV8TU6U0:00000001 [INF] Executed DbCommand ("64"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-08-15T13:25:35.8279162+07:00 0HLG2EV8TU6U0:00000001 [INF] Executed DbCommand ("79"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-08-15T13:25:35.9149198+07:00 0HLG2EV8TU6U0:00000001 [INF] Executed DbCommand ("60"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:25:35.9969380+07:00 0HLG2EV8TU6U0:00000001 [INF] Executed DbCommand ("48"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-08-15T13:25:36.0499406+07:00 0HLG2EV8TU6U0:00000001 [INF] Executed DbCommand ("45"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-08-15T13:25:36.1355447+07:00 0HLG2EV8TU6U0:00000001 [INF] Executed DbCommand ("73"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:25:36.1869932+07:00 0HLG2EV8TU6U0:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-08-15T13:25:36.2138982+07:00 0HLG2EV8TU6U0:00000001 [INF] User logged in. (fdce0db4)
+2018-08-15T13:25:36.2221330+07:00 0HLG2EV8TU6U0:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-08-15T13:25:36.2359453+07:00 0HLG2EV8TU6U0:00000001 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" in 649.3721ms (afa2e885)
+2018-08-15T13:25:36.2524567+07:00 0HLG2EV8TU6U0:00000001 [INF] Request finished in 696.4682ms 200 application/json; charset=utf-8 (791a596a)
+2018-08-15T13:25:36.3984017+07:00 0HLG2EV8TU6U0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T13:25:36.4222905+07:00 0HLG2EV8TU6U0:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:25:36.4768223+07:00 0HLG2EV8TU6TS:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T13:25:36.4808903+07:00 0HLG2EV8TU6U0:00000002 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:25:36.5216341+07:00 0HLG2EV8TU6U0:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T13:25:42.2608239+07:00 0HLG2EV8TU6TS:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:25:42.2754197+07:00 0HLG2EV8TU6U0:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:25:42.7047560+07:00 0HLG2EV8TU6U0:00000002 [INF] Executed DbCommand ("302"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-08-15T13:25:42.8531939+07:00 0HLG2EV8TU6TS:00000004 [INF] Executed DbCommand ("114"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-08-15T13:25:44.1070513+07:00 0HLG2EV8TU6TS:00000004 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" in 8443.899ms (afa2e885)
+2018-08-15T13:25:44.4540448+07:00 0HLG2EV8TU6TS:00000004 [INF] Request finished in 8786.2563ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:25:45.1512196+07:00 0HLG2EV8TU6U0:00000002 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" in 7398.5915ms (afa2e885)
+2018-08-15T13:25:45.1714993+07:00 0HLG2EV8TU6U0:00000002 [INF] Request finished in 8819.5772ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:25:51.9482935+07:00 0HLG2EV8TU6U0:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:51957/Account/Logout?area=Admin application/x-www-form-urlencoded 225 (ca22a1cb)
+2018-08-15T13:25:52.0223515+07:00 0HLG2EV8TU6U0:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:25:52.0425299+07:00 0HLG2EV8TU6U0:00000003 [ERR] Request matched multiple actions resulting in ambiguity. Matching actions: "ERPCartonWeb.Controllers.AccountController.Logout (ERPCartonWeb)
+ERPCartonWeb.Areas.Admin.Controllers.AccountController.Logout (ERPCartonWeb)" (ab9a4111)
+2018-08-15T13:25:52.2241985+07:00 0HLG2EV8TU6U0:00000003 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+ERPCartonWeb.Controllers.AccountController.Logout (ERPCartonWeb)
+ERPCartonWeb.Areas.Admin.Controllers.AccountController.Logout (ERPCartonWeb)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-15T13:25:52.8919075+07:00 0HLG2EV8TU6U0:00000003 [INF] Request finished in 688.8181ms 500 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:26:38.3932021+07:00 0HLG2EV8TU6U0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin   (ca22a1cb)
+2018-08-15T13:26:38.4017529+07:00 0HLG2EV8TU6U0:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:26:38.4510209+07:00 0HLG2EV8TU6U0:00000004 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:26:38.4606757+07:00 0HLG2EV8TU6U0:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-08-15T13:26:38.5500997+07:00 0HLG2EV8TU6U0:00000004 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" in 60.5859ms (afa2e885)
+2018-08-15T13:26:38.6102544+07:00 0HLG2EV8TU6U0:00000004 [INF] Request finished in 166.1068ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:26:40.3192242+07:00 0HLG2EV8TU6U0:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:51957/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-08-15T13:26:40.3313991+07:00 0HLG2EV8TU6U0:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:26:40.3720473+07:00 0HLG2EV8TU6U0:00000005 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" with arguments (["ERPCartonWeb.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:26:40.3827372+07:00 0HLG2EV8TU6U0:00000005 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:26:40.5476740+07:00 0HLG2EV8TU6U0:00000005 [INF] Executed DbCommand ("145"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-08-15T13:26:40.6451873+07:00 0HLG2EV8TU6U0:00000005 [INF] Executed DbCommand ("72"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-08-15T13:26:40.7056700+07:00 0HLG2EV8TU6U0:00000005 [INF] Executed DbCommand ("40"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:26:40.7682523+07:00 0HLG2EV8TU6U0:00000005 [INF] Executed DbCommand ("53"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-08-15T13:26:40.8240929+07:00 0HLG2EV8TU6U0:00000005 [INF] Executed DbCommand ("48"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-08-15T13:26:40.8719285+07:00 0HLG2EV8TU6U0:00000005 [INF] Executed DbCommand ("39"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:26:40.8786471+07:00 0HLG2EV8TU6U0:00000005 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-08-15T13:26:40.8852761+07:00 0HLG2EV8TU6U0:00000005 [INF] User logged in. (fdce0db4)
+2018-08-15T13:26:40.8928010+07:00 0HLG2EV8TU6U0:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-08-15T13:26:40.9002667+07:00 0HLG2EV8TU6U0:00000005 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" in 561.2399ms (afa2e885)
+2018-08-15T13:26:40.9198305+07:00 0HLG2EV8TU6U0:00000005 [INF] Request finished in 589.054ms 200 application/json; charset=utf-8 (791a596a)
+2018-08-15T13:26:41.0491412+07:00 0HLG2EV8TU6U0:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T13:26:41.0586730+07:00 0HLG2EV8TU6U0:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:26:41.0987532+07:00 0HLG2EV8TU6U0:00000006 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:26:41.1052863+07:00 0HLG2EV8TU6U0:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T13:26:41.1214533+07:00 0HLG2EV8TU6U0:00000006 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:26:41.1769185+07:00 0HLG2EV8TU6U0:00000006 [INF] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-08-15T13:26:41.4504607+07:00 0HLG2EV8TU6U0:00000006 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" in 366.4266ms (afa2e885)
+2018-08-15T13:26:41.5049599+07:00 0HLG2EV8TU6U0:00000006 [INF] Request finished in 440.1534ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:26:44.4113501+07:00 0HLG2EV8TU6U0:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:51957/Account/Logout application/x-www-form-urlencoded 225 (ca22a1cb)
+2018-08-15T13:26:44.4496435+07:00 0HLG2EV8TU6U0:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:26:44.4835963+07:00 0HLG2EV8TU6U0:00000007 [ERR] Request matched multiple actions resulting in ambiguity. Matching actions: "ERPCartonWeb.Controllers.AccountController.Logout (ERPCartonWeb)
+ERPCartonWeb.Areas.Admin.Controllers.AccountController.Logout (ERPCartonWeb)" (ab9a4111)
+2018-08-15T13:26:44.7824866+07:00 0HLG2EV8TU6U0:00000007 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+ERPCartonWeb.Controllers.AccountController.Logout (ERPCartonWeb)
+ERPCartonWeb.Areas.Admin.Controllers.AccountController.Logout (ERPCartonWeb)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-15T13:26:45.1807252+07:00 0HLG2EV8TU6U0:00000007 [INF] Request finished in 770.0619ms 500 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:32:07.9219744+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:32:08.4892328+07:00  [INF] Executed DbCommand ("88"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T13:32:08.5669077+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T13:32:08.6195520+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-08-15T13:32:08.6839244+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-08-15T13:32:08.7170852+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-08-15T13:32:08.8286993+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-08-15T13:32:08.9055202+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-08-15T13:32:08.9540984+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-08-15T13:32:09.0095059+07:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-08-15T13:32:09.1169148+07:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T13:32:09.1620713+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T13:32:09.2079938+07:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-08-15T13:32:10.6698061+07:00 0HLG2F3A1OAVN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/   (ca22a1cb)
+2018-08-15T13:32:10.8321472+07:00 0HLG2F3A1OAVN:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:32:11.4886624+07:00 0HLG2F3A1OAVN:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-08-15T13:32:11.8558688+07:00 0HLG2F3A1OAVN:00000001 [INF] Executing action method "ERPCartonWeb.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:32:18.0560937+07:00 0HLG2F3A1OAVN:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T13:32:19.9130125+07:00 0HLG2F3A1OAVN:00000001 [INF] Executed action "ERPCartonWeb.Controllers.HomeController.Index (ERPCartonWeb)" in 8296.3057ms (afa2e885)
+2018-08-15T13:32:19.9576373+07:00 0HLG2F3A1OAVN:00000001 [INF] Request finished in 9384.857ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:32:23.3888042+07:00 0HLG2F3A1OAVN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin   (ca22a1cb)
+2018-08-15T13:32:23.4728150+07:00 0HLG2F3A1OAVN:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:32:23.5997576+07:00 0HLG2F3A1OAVN:00000002 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:32:24.1945958+07:00 0HLG2F3A1OAVN:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-08-15T13:32:24.3991496+07:00 0HLG2F3A1OAVN:00000002 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" in 812.3023ms (afa2e885)
+2018-08-15T13:32:24.4658162+07:00 0HLG2F3A1OAVQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51957/admin   (ca22a1cb)
+2018-08-15T13:32:24.4732091+07:00 0HLG2F3A1OAVN:00000002 [INF] Request finished in 1031.7933ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:32:24.5096206+07:00 0HLG2F3A1OAVQ:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:32:24.5712229+07:00 0HLG2F3A1OAVQ:00000001 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:32:24.5830263+07:00 0HLG2F3A1OAVQ:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-08-15T13:32:24.7056696+07:00 0HLG2F3A1OAVQ:00000001 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" in 77.4322ms (afa2e885)
+2018-08-15T13:32:24.7272767+07:00 0HLG2F3A1OAVQ:00000001 [INF] Request finished in 301.2998ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:32:28.0024926+07:00 0HLG2F3A1OAVQ:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:51957/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-08-15T13:32:28.0100433+07:00 0HLG2F3A1OAVQ:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:32:28.1671935+07:00 0HLG2F3A1OAVQ:00000002 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" with arguments (["ERPCartonWeb.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:32:28.2028340+07:00 0HLG2F3A1OAVQ:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:32:28.3626102+07:00 0HLG2F3A1OAVQ:00000002 [INF] Executed DbCommand ("104"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-08-15T13:32:28.6358165+07:00 0HLG2F3A1OAVQ:00000002 [INF] Executed DbCommand ("89"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-08-15T13:32:28.7230370+07:00 0HLG2F3A1OAVQ:00000002 [INF] Executed DbCommand ("28"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:32:28.8120347+07:00 0HLG2F3A1OAVQ:00000002 [INF] Executed DbCommand ("38"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-08-15T13:32:28.9108799+07:00 0HLG2F3A1OAVQ:00000002 [INF] Executed DbCommand ("47"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-08-15T13:32:28.9694068+07:00 0HLG2F3A1OAVQ:00000002 [INF] Executed DbCommand ("49"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:32:29.0129101+07:00 0HLG2F3A1OAVQ:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-08-15T13:32:29.0272799+07:00 0HLG2F3A1OAVQ:00000002 [INF] User logged in. (fdce0db4)
+2018-08-15T13:32:29.0397738+07:00 0HLG2F3A1OAVQ:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-08-15T13:32:29.1062697+07:00 0HLG2F3A1OAVQ:00000002 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" in 1028.7444ms (afa2e885)
+2018-08-15T13:32:29.2624191+07:00 0HLG2F3A1OAVQ:00000002 [INF] Request finished in 1112.6843ms 200 application/json; charset=utf-8 (791a596a)
+2018-08-15T13:32:29.2868722+07:00 0HLG2F3A1OAVQ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T13:32:29.3134530+07:00 0HLG2F3A1OAVQ:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:32:29.7314391+07:00 0HLG2F3A1OAVQ:00000003 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:32:30.0361458+07:00 0HLG2F3A1OAVQ:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T13:32:30.5824028+07:00 0HLG2F3A1OAVQ:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:32:30.8319136+07:00 0HLG2F3A1OAVQ:00000003 [INF] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-08-15T13:32:31.7958002+07:00 0HLG2F3A1OAVQ:00000003 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" in 2458.3283ms (afa2e885)
+2018-08-15T13:32:31.9343572+07:00 0HLG2F3A1OAVQ:00000003 [INF] Request finished in 2559.4665ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:32:35.9539099+07:00 0HLG2F3A1OAVQ:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:51957/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-08-15T13:32:35.9963088+07:00 0HLG2F3A1OAVQ:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:32:36.0855610+07:00 0HLG2F3A1OAVQ:00000004 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.AccountController.Logout (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:32:36.1199955+07:00 0HLG2F3A1OAVQ:00000004 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-08-15T13:32:36.2082526+07:00 0HLG2F3A1OAVQ:00000004 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-08-15T13:32:36.2578642+07:00 0HLG2F3A1OAVQ:00000004 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-08-15T13:32:36.2870550+07:00 0HLG2F3A1OAVQ:00000004 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2018-08-15T13:32:36.3187053+07:00 0HLG2F3A1OAVQ:00000004 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.AccountController.Logout (ERPCartonWeb)" in 268.6437ms (afa2e885)
+2018-08-15T13:32:36.3540856+07:00 0HLG2F3A1OAVQ:00000004 [INF] Request finished in 423.6207ms 302  (791a596a)
+2018-08-15T13:32:36.5078187+07:00 0HLG2F3A1OAVQ:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Login/Index   (ca22a1cb)
+2018-08-15T13:32:36.6011943+07:00 0HLG2F3A1OAVQ:00000005 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:32:36.6197048+07:00 0HLG2F3A1OAVQ:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-08-15T13:32:36.6398419+07:00 0HLG2F3A1OAVQ:00000005 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" in 110.4717ms (afa2e885)
+2018-08-15T13:32:36.7499701+07:00 0HLG2F3A1OAVQ:00000005 [INF] Request finished in 201.9031ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:32:40.7644926+07:00 0HLG2F3A1OAVQ:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:51957/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 29 (ca22a1cb)
+2018-08-15T13:32:40.8212781+07:00 0HLG2F3A1OAVQ:00000006 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" with arguments (["ERPCartonWeb.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:32:40.8306704+07:00 0HLG2F3A1OAVQ:00000006 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:32:40.8723688+07:00 0HLG2F3A1OAVQ:00000006 [INF] Executed DbCommand ("33"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-08-15T13:32:40.8839760+07:00 0HLG2F3A1OAVQ:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-08-15T13:32:40.8931545+07:00 0HLG2F3A1OAVQ:00000006 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" in 121.0231ms (afa2e885)
+2018-08-15T13:32:40.9034639+07:00 0HLG2F3A1OAVQ:00000006 [INF] Request finished in 136.9611ms 200 application/json; charset=utf-8 (791a596a)
+2018-08-15T13:32:49.0244984+07:00 0HLG2F3A1OAVQ:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T13:32:49.0911282+07:00 0HLG2F3A1OAVQ:00000007 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:32:49.1100472+07:00 0HLG2F3A1OAVQ:00000007 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T13:32:49.2127080+07:00 0HLG2F3A1OAVQ:00000007 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" in 102.954ms (afa2e885)
+2018-08-15T13:32:49.3721574+07:00 0HLG2F3A1OAVQ:00000007 [INF] Request finished in 219.0775ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:33:08.2007940+07:00 0HLG2F3A1OAVQ:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Login/Index   (ca22a1cb)
+2018-08-15T13:33:08.2561033+07:00 0HLG2F3A1OAVQ:00000008 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:33:08.2697687+07:00 0HLG2F3A1OAVQ:00000008 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-08-15T13:33:08.3022607+07:00 0HLG2F3A1OAVQ:00000008 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Index (ERPCartonWeb)" in 71.4463ms (afa2e885)
+2018-08-15T13:33:08.3521302+07:00 0HLG2F3A1OAVQ:00000008 [INF] Request finished in 143.6106ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-15T13:33:17.8358056+07:00 0HLG2F3A1OAVQ:00000009 [INF] Request starting HTTP/1.1 POST http://localhost:51957/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-08-15T13:33:17.8913014+07:00 0HLG2F3A1OAVQ:00000009 [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" with arguments (["ERPCartonWeb.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:33:17.9014440+07:00 0HLG2F3A1OAVQ:00000009 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:33:17.9563243+07:00 0HLG2F3A1OAVQ:00000009 [INF] Executed DbCommand ("47"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-08-15T13:33:18.0227462+07:00 0HLG2F3A1OAVQ:00000009 [INF] Executed DbCommand ("46"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-08-15T13:33:18.1092325+07:00 0HLG2F3A1OAVQ:00000009 [INF] Executed DbCommand ("79"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:33:18.1571708+07:00 0HLG2F3A1OAVQ:00000009 [INF] Executed DbCommand ("41"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-08-15T13:33:18.2259977+07:00 0HLG2F3A1OAVQ:00000009 [INF] Executed DbCommand ("61"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-08-15T13:33:18.2882542+07:00 0HLG2F3A1OAVQ:00000009 [INF] Executed DbCommand ("55"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-15T13:33:18.2960116+07:00 0HLG2F3A1OAVQ:00000009 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-08-15T13:33:18.3098401+07:00 0HLG2F3A1OAVQ:00000009 [INF] User logged in. (fdce0db4)
+2018-08-15T13:33:18.3382227+07:00 0HLG2F3A1OAVQ:00000009 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-08-15T13:33:18.3499335+07:00 0HLG2F3A1OAVQ:00000009 [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.LoginController.Authen (ERPCartonWeb)" in 501.3385ms (afa2e885)
+2018-08-15T13:33:18.3656925+07:00 0HLG2F3A1OAVQ:00000009 [INF] Request finished in 523.3902ms 200 application/json; charset=utf-8 (791a596a)
+2018-08-15T13:33:18.4428596+07:00 0HLG2F3A1OAVQ:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:51957/Admin/Home/Index   (ca22a1cb)
+2018-08-15T13:33:18.4517232+07:00 0HLG2F3A1OAVQ:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-08-15T13:33:18.5011309+07:00 0HLG2F3A1OAVQ:0000000A [INF] Executing action method "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-08-15T13:33:18.5185442+07:00 0HLG2F3A1OAVQ:0000000A [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-08-15T13:33:18.5343882+07:00 0HLG2F3A1OAVQ:0000000A [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ERPCartonWeb.Data.EF " (9958f5bb)
+2018-08-15T13:33:18.5879794+07:00 0HLG2F3A1OAVQ:0000000A [INF] Executed DbCommand ("45"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-08-15T13:33:18.6479687+07:00 0HLG2F3A1OAVQ:0000000A [INF] Executed action "ERPCartonWeb.Areas.Admin.Controllers.HomeController.Index (ERPCartonWeb)" in 137.8489ms (afa2e885)
+2018-08-15T13:33:18.7215519+07:00 0HLG2F3A1OAVQ:0000000A [INF] Request finished in 214.0425ms 200 text/html; charset=utf-8 (791a596a)

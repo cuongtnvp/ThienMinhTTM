@@ -4,6 +4,7 @@ using ERPCartonWeb.Application.Interfaces;
 using ERPCartonWeb.Data.EF;
 using ERPCartonWeb.Data.EF.Repositories;
 using ERPCartonWeb.Data.Entities;
+using ERPCartonWeb.Data.IRepositories;
 using ERPCartonWeb.Data.Repositories;
 using ERPCartonWeb.Helpers;
 using ERPCartonWeb.Services;
@@ -72,10 +73,13 @@ namespace ERPCartonWeb
             services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddTransient<DbInitializer>();
+            //Repositories
 
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
-
+            services.AddTransient<IFunctionRepository, FunctionRepository>();
+            //Services
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
+            services.AddTransient<IFunctionService, FunctionService>();
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
 
             services.AddMvc().AddJsonOptions(options=>options.SerializerSettings.ContractResolver=new DefaultContractResolver());
